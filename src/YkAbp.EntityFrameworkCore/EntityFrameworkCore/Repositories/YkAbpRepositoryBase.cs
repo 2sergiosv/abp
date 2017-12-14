@@ -2,7 +2,7 @@
 using Abp.EntityFrameworkCore;
 using Abp.EntityFrameworkCore.Repositories;
 
-namespace YkAbp.EntityFrameworkCore.Repositories
+namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore.Repositories
 {
     /// <summary>
     /// Base class for custom repositories of the application.

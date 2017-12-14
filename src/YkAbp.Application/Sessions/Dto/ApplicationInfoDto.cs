@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace YkAbp.Sessions.Dto
+namespace YkAbp.Application.Sessions.Dto
 {
     public class ApplicationInfoDto
     {

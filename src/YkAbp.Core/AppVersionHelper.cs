@@ -2,7 +2,7 @@
 using System.IO;
 using Abp.Reflection.Extensions;
 
-namespace YkAbp
+namespace YkAbp.Core
 {
     /// <summary>
     /// Central point for application version.

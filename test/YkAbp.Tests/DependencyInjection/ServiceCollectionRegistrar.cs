@@ -4,8 +4,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Castle.MicroKernel.Registration;
 using Castle.Windsor.MsDependencyInjection;
 using Abp.Dependency;
+using YkAbp.Core.Identity;
 using YkAbp.EntityFrameworkCore;
-using YkAbp.Identity;
+using YkAbp.EntityFrameworkCore.EntityFrameworkCore;
 
 namespace YkAbp.Tests.DependencyInjection
 {

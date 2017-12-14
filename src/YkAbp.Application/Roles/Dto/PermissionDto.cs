@@ -1,8 +1,8 @@
 using Abp.Application.Services.Dto;
-using Abp.AutoMapper;
 using Abp.Authorization;
+using Abp.AutoMapper;
 
-namespace YkAbp.Roles.Dto
+namespace YkAbp.Application.Roles.Dto
 {
     [AutoMapFrom(typeof(Permission))]
     public class PermissionDto : EntityDto<long>

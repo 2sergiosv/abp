@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace YkAbp.Configuration.Ui
+namespace YkAbp.Application.Configuration.Ui
 {
     public static class UiThemes
     {

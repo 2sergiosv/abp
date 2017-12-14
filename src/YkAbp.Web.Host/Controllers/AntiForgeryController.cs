@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Antiforgery;
-using YkAbp.Controllers;
+using YkAbp.Web.Core.Controllers;
 
 namespace YkAbp.Web.Host.Controllers
 {

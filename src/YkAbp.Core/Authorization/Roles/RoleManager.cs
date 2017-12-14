@@ -1,14 +1,14 @@
 using System.Collections.Generic;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Logging;
 using Abp.Authorization;
 using Abp.Authorization.Roles;
 using Abp.Domain.Uow;
 using Abp.Runtime.Caching;
 using Abp.Zero.Configuration;
-using YkAbp.Authorization.Users;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Logging;
+using YkAbp.Core.Authorization.Users;
 
-namespace YkAbp.Authorization.Roles
+namespace YkAbp.Core.Authorization.Roles
 {
     public class RoleManager : AbpRoleManager<Role, User>
     {

@@ -4,7 +4,7 @@ using Abp;
 using Abp.Extensions;
 using Abp.Notifications;
 using Abp.Timing;
-using YkAbp.Controllers;
+using YkAbp.Web.Core.Controllers;
 
 namespace YkAbp.Web.Host.Controllers
 {

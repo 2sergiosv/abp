@@ -1,4 +1,4 @@
-namespace YkAbp.Authorization.Accounts.Dto
+namespace YkAbp.Application.Authorization.Accounts.Dto
 {
     public class IsTenantAvailableOutput
     {

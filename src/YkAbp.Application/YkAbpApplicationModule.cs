@@ -1,9 +1,10 @@
 ﻿using Abp.AutoMapper;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
-using YkAbp.Authorization;
+using YkAbp.Core;
+using YkAbp.Core.Authorization;
 
-namespace YkAbp
+namespace YkAbp.Application
 {
     [DependsOn(
         typeof(YkAbpCoreModule), 

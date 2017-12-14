@@ -3,9 +3,9 @@ using System.ComponentModel.DataAnnotations;
 using Abp.Auditing;
 using Abp.Authorization.Users;
 using Abp.Extensions;
-using YkAbp.Validation;
+using YkAbp.Core.Validation;
 
-namespace YkAbp.Authorization.Accounts.Dto
+namespace YkAbp.Application.Authorization.Accounts.Dto
 {
     public class RegisterInput : IValidatableObject
     {

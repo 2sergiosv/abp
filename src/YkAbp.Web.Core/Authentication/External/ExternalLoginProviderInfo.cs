@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace YkAbp.Authentication.External
+namespace YkAbp.Web.Core.Authentication.External
 {
     public class ExternalLoginProviderInfo
     {

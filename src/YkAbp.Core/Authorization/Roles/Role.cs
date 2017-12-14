@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Abp.Authorization.Roles;
-using YkAbp.Authorization.Users;
+using YkAbp.Core.Authorization.Users;
 
-namespace YkAbp.Authorization.Roles
+namespace YkAbp.Core.Authorization.Roles
 {
     public class Role : AbpRole<User>
     {

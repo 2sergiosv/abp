@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Microsoft.EntityFrameworkCore;
 using Abp.Localization;
+using Microsoft.EntityFrameworkCore;
 
-namespace YkAbp.EntityFrameworkCore.Seed.Host
+namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed.Host
 {
     public class DefaultLanguagesCreator
     {

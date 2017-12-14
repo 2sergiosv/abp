@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
-using YkAbp.Sessions.Dto;
+using YkAbp.Application.Sessions.Dto;
 
-namespace YkAbp.Sessions
+namespace YkAbp.Application.Sessions
 {
     public interface ISessionAppService : IApplicationService
     {

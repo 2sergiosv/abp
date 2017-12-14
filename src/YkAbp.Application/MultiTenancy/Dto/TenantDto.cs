@@ -2,8 +2,9 @@ using System.ComponentModel.DataAnnotations;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using Abp.MultiTenancy;
+using YkAbp.Core.MultiTenancy;
 
-namespace YkAbp.MultiTenancy.Dto
+namespace YkAbp.Application.MultiTenancy.Dto
 {
     [AutoMapFrom(typeof(Tenant))]
     public class TenantDto : EntityDto

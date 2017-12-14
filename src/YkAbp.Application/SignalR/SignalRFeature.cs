@@ -1,4 +1,4 @@
-﻿namespace YkAbp.SignalR
+﻿namespace YkAbp.Application.SignalR
 {
     public static class SignalRFeature
     {

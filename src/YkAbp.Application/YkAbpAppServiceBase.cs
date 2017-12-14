@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
 using Abp.Application.Services;
 using Abp.IdentityFramework;
 using Abp.Runtime.Session;
-using YkAbp.MultiTenancy;
-using YkAbp.Authorization.Users;
+using Microsoft.AspNetCore.Identity;
+using YkAbp.Core;
+using YkAbp.Core.Authorization.Users;
+using YkAbp.Core.MultiTenancy;
 
-namespace YkAbp
+namespace YkAbp.Application
 {
     /// <summary>
     /// Derive your application services from this class.

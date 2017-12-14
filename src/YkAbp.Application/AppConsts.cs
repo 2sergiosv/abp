@@ -1,4 +1,4 @@
-﻿namespace YkAbp
+﻿namespace YkAbp.Application
 {
     public class AppConsts
     {

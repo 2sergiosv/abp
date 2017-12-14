@@ -1,14 +1,14 @@
 using System.Linq;
-using Microsoft.EntityFrameworkCore;
 using Abp.Authorization;
 using Abp.Authorization.Roles;
 using Abp.Authorization.Users;
 using Abp.MultiTenancy;
-using YkAbp.Authorization;
-using YkAbp.Authorization.Roles;
-using YkAbp.Authorization.Users;
+using Microsoft.EntityFrameworkCore;
+using YkAbp.Core.Authorization;
+using YkAbp.Core.Authorization.Roles;
+using YkAbp.Core.Authorization.Users;
 
-namespace YkAbp.EntityFrameworkCore.Seed.Host
+namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed.Host
 {
     public class HostRoleAndUserCreator
     {

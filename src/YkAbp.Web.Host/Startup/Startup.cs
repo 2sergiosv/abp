@@ -11,16 +11,16 @@ using Swashbuckle.AspNetCore.Swagger;
 using Abp.AspNetCore;
 using Abp.Castle.Logging.Log4Net;
 using Abp.Extensions;
-using YkAbp.Authentication.JwtBearer;
-using YkAbp.Configuration;
-using YkAbp.Identity;
+using YkAbp.Core.Identity;
+using YkAbp.Web.Core.Authentication.JwtBearer;
+using YkAbp.Web.Core.Configuration;
 
 #if FEATURE_SIGNALR
 using Microsoft.AspNet.SignalR;
 using Microsoft.Owin.Cors;
 using Owin;
 using Abp.Owin;
-using YkAbp.Owin;
+using YkAbp.Web.Core.Owin;
 #endif
 
 namespace YkAbp.Web.Host.Startup
@@ -99,6 +99,7 @@ namespace YkAbp.Web.Host.Startup
             app.UseStaticFiles();
 
             app.UseAuthentication();
+
             app.UseJwtTokenMiddleware();
 
             app.UseAbpRequestLocalization();

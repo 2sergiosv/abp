@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
-using YkAbp.Authorization;
-using YkAbp.Authorization.Roles;
-using YkAbp.Authorization.Users;
-using YkAbp.Editions;
-using YkAbp.MultiTenancy;
+using YkAbp.Core.Authorization;
+using YkAbp.Core.Authorization.Roles;
+using YkAbp.Core.Authorization.Users;
+using YkAbp.Core.Editions;
+using YkAbp.Core.MultiTenancy;
 
-namespace YkAbp.Identity
+namespace YkAbp.Core.Identity
 {
     public static class IdentityRegistrar
     {

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 
-namespace YkAbp.Authentication.JwtBearer
+namespace YkAbp.Web.Core.Authentication.JwtBearer
 {
     public static class JwtTokenMiddleware
     {

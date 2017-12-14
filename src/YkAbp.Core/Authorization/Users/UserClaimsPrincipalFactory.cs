@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Abp.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
-using Abp.Authorization;
-using YkAbp.Authorization.Roles;
+using YkAbp.Core.Authorization.Roles;
 
-namespace YkAbp.Authorization.Users
+namespace YkAbp.Core.Authorization.Users
 {
     public class UserClaimsPrincipalFactory : AbpUserClaimsPrincipalFactory<User, Role>
     {

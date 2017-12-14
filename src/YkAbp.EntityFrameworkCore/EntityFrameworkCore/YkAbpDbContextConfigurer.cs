@@ -1,7 +1,7 @@
 using System.Data.Common;
 using Microsoft.EntityFrameworkCore;
 
-namespace YkAbp.EntityFrameworkCore
+namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore
 {
     public static class YkAbpDbContextConfigurer
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using Abp.Dependency;
 
-namespace YkAbp.Timing
+namespace YkAbp.Core.Timing
 {
     public class AppTimes : ISingletonDependency
     {

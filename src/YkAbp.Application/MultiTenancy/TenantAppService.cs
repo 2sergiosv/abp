@@ -1,6 +1,5 @@
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using Abp.Authorization;
@@ -9,13 +8,15 @@ using Abp.Extensions;
 using Abp.IdentityFramework;
 using Abp.MultiTenancy;
 using Abp.Runtime.Security;
-using YkAbp.Authorization;
-using YkAbp.Authorization.Roles;
-using YkAbp.Authorization.Users;
-using YkAbp.Editions;
-using YkAbp.MultiTenancy.Dto;
+using Microsoft.AspNetCore.Identity;
+using YkAbp.Application.MultiTenancy.Dto;
+using YkAbp.Core.Authorization;
+using YkAbp.Core.Authorization.Roles;
+using YkAbp.Core.Authorization.Users;
+using YkAbp.Core.Editions;
+using YkAbp.Core.MultiTenancy;
 
-namespace YkAbp.MultiTenancy
+namespace YkAbp.Application.MultiTenancy
 {
     [AbpAuthorize(PermissionNames.Pages_Tenants)]
     public class TenantAppService : AsyncCrudAppService<Tenant, TenantDto, int, PagedResultRequestDto, CreateTenantDto, TenantDto>, ITenantAppService

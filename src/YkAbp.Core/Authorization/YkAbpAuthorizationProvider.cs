@@ -2,7 +2,7 @@
 using Abp.Localization;
 using Abp.MultiTenancy;
 
-namespace YkAbp.Authorization
+namespace YkAbp.Core.Authorization
 {
     public class YkAbpAuthorizationProvider : AuthorizationProvider
     {

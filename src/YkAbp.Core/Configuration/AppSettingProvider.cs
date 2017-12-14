@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Abp.Configuration;
 
-namespace YkAbp.Configuration
+namespace YkAbp.Core.Configuration
 {
     public class AppSettingProvider : SettingProvider
     {

@@ -1,8 +1,6 @@
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using System.Linq;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using Abp.Authorization;
@@ -10,13 +8,15 @@ using Abp.Domain.Repositories;
 using Abp.IdentityFramework;
 using Abp.Localization;
 using Abp.Runtime.Session;
-using YkAbp.Authorization;
-using YkAbp.Authorization.Users;
-using YkAbp.Authorization.Roles;
-using YkAbp.Users.Dto;
-using YkAbp.Roles.Dto;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using YkAbp.Application.Roles.Dto;
+using YkAbp.Application.Users.Dto;
+using YkAbp.Core.Authorization;
+using YkAbp.Core.Authorization.Roles;
+using YkAbp.Core.Authorization.Users;
 
-namespace YkAbp.Users
+namespace YkAbp.Application.Users
 {
     [AbpAuthorize(PermissionNames.Pages_Users)]
     public class UserAppService : AsyncCrudAppService<User, UserDto, long, PagedResultRequestDto, CreateUserDto, UserDto>, IUserAppService

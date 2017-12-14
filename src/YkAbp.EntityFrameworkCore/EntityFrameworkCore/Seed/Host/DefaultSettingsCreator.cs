@@ -1,10 +1,10 @@
 ﻿using System.Linq;
-using Microsoft.EntityFrameworkCore;
 using Abp.Configuration;
 using Abp.Localization;
 using Abp.Net.Mail;
+using Microsoft.EntityFrameworkCore;
 
-namespace YkAbp.EntityFrameworkCore.Seed.Host
+namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed.Host
 {
     public class DefaultSettingsCreator
     {

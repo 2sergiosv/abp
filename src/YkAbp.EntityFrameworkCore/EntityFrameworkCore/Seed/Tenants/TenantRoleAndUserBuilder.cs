@@ -1,16 +1,16 @@
 ﻿using System.Linq;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Options;
-using Microsoft.EntityFrameworkCore;
 using Abp.Authorization;
 using Abp.Authorization.Roles;
 using Abp.Authorization.Users;
 using Abp.MultiTenancy;
-using YkAbp.Authorization;
-using YkAbp.Authorization.Roles;
-using YkAbp.Authorization.Users;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using YkAbp.Core.Authorization;
+using YkAbp.Core.Authorization.Roles;
+using YkAbp.Core.Authorization.Users;
 
-namespace YkAbp.EntityFrameworkCore.Seed.Tenants
+namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed.Tenants
 {
     public class TenantRoleAndUserBuilder
     {

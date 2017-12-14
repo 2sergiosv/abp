@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using YkAbp.Configuration.Dto;
+using YkAbp.Application.Configuration.Dto;
 
-namespace YkAbp.Configuration
+namespace YkAbp.Application.Configuration
 {
     public interface IConfigurationAppService
     {

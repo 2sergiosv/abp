@@ -1,7 +1,7 @@
 ﻿using Abp.MultiTenancy;
-using YkAbp.Authorization.Users;
+using YkAbp.Core.Authorization.Users;
 
-namespace YkAbp.MultiTenancy
+namespace YkAbp.Core.MultiTenancy
 {
     public class Tenant : AbpTenant<User>
     {

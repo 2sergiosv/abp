@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace YkAbp.Configuration.Dto
+namespace YkAbp.Application.Configuration.Dto
 {
     public class ChangeUiThemeInput
     {

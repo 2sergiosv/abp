@@ -1,8 +1,8 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
-using YkAbp.Authorization.Users;
+using YkAbp.Core.Authorization.Users;
 
-namespace YkAbp.Sessions.Dto
+namespace YkAbp.Application.Sessions.Dto
 {
     [AutoMapFrom(typeof(User))]
     public class UserLoginInfoDto : EntityDto<long>

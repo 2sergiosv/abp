@@ -1,9 +1,9 @@
 ﻿using System.Collections.Concurrent;
-using Microsoft.Extensions.Configuration;
 using Abp.Extensions;
 using Abp.Reflection.Extensions;
+using Microsoft.Extensions.Configuration;
 
-namespace YkAbp.Configuration
+namespace YkAbp.Core.Configuration
 {
     public static class AppConfigurations
     {

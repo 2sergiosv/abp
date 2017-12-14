@@ -1,4 +1,5 @@
 ﻿using Xunit;
+using YkAbp.Core;
 
 namespace YkAbp.Tests
 {

@@ -8,11 +8,12 @@ using Abp.Events.Bus;
 using Abp.Events.Bus.Entities;
 using Abp.Runtime.Session;
 using Abp.TestBase;
-using YkAbp.Authorization.Users;
+using YkAbp.Core.Authorization.Users;
+using YkAbp.Core.MultiTenancy;
 using YkAbp.EntityFrameworkCore;
-using YkAbp.EntityFrameworkCore.Seed.Host;
-using YkAbp.EntityFrameworkCore.Seed.Tenants;
-using YkAbp.MultiTenancy;
+using YkAbp.EntityFrameworkCore.EntityFrameworkCore;
+using YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed.Host;
+using YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed.Tenants;
 
 namespace YkAbp.Tests
 {

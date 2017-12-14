@@ -1,10 +1,10 @@
 using System.Linq;
-using Microsoft.EntityFrameworkCore;
 using Abp.Application.Editions;
 using Abp.Application.Features;
-using YkAbp.Editions;
+using Microsoft.EntityFrameworkCore;
+using YkAbp.Core.Editions;
 
-namespace YkAbp.EntityFrameworkCore.Seed.Host
+namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed.Host
 {
     public class DefaultEditionCreator
     {

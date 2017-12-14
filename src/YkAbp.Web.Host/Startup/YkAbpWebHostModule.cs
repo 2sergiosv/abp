@@ -2,7 +2,8 @@
 using Microsoft.Extensions.Configuration;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
-using YkAbp.Configuration;
+using YkAbp.Web.Core;
+using YkAbp.Web.Core.Configuration;
 
 namespace YkAbp.Web.Host.Startup
 {

@@ -1,10 +1,10 @@
 ﻿using Abp.Application.Features;
 using Abp.Domain.Repositories;
 using Abp.MultiTenancy;
-using YkAbp.Authorization.Users;
-using YkAbp.Editions;
+using YkAbp.Core.Authorization.Users;
+using YkAbp.Core.Editions;
 
-namespace YkAbp.MultiTenancy
+namespace YkAbp.Core.MultiTenancy
 {
     public class TenantManager : AbpTenantManager<Tenant, User>
     {

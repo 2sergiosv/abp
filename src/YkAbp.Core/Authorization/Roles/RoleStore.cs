@@ -1,9 +1,9 @@
 using Abp.Authorization.Roles;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
-using YkAbp.Authorization.Users;
+using YkAbp.Core.Authorization.Users;
 
-namespace YkAbp.Authorization.Roles
+namespace YkAbp.Core.Authorization.Roles
 {
     public class RoleStore : AbpRoleStore<Role, User>
     {

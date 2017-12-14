@@ -1,4 +1,4 @@
-﻿namespace YkAbp.Authentication.External
+﻿namespace YkAbp.Web.Core.Authentication.External
 {
     public class ExternalAuthUserInfo
     {

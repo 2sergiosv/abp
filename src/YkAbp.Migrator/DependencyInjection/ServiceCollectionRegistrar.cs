@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Castle.Windsor.MsDependencyInjection;
 using Abp.Dependency;
-using YkAbp.Identity;
+using YkAbp.Core.Identity;
 
 namespace YkAbp.Migrator.DependencyInjection
 {

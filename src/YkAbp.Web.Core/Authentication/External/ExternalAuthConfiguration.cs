@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Abp.Dependency;
 
-namespace YkAbp.Authentication.External
+namespace YkAbp.Web.Core.Authentication.External
 {
     public class ExternalAuthConfiguration : IExternalAuthConfiguration, ISingletonDependency
     {

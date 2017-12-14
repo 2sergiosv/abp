@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Abp.Authorization;
 using Abp.Authorization.Users;
 using Abp.Configuration;
@@ -10,9 +7,12 @@ using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using Abp.Organizations;
 using Abp.Runtime.Caching;
-using YkAbp.Authorization.Roles;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using YkAbp.Core.Authorization.Roles;
 
-namespace YkAbp.Authorization.Users
+namespace YkAbp.Core.Authorization.Users
 {
     public class UserManager : AbpUserManager<Role, User>
     {

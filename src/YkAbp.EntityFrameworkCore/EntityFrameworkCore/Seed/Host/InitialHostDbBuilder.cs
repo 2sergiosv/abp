@@ -1,4 +1,4 @@
-﻿namespace YkAbp.EntityFrameworkCore.Seed.Host
+﻿namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed.Host
 {
     public class InitialHostDbBuilder
     {

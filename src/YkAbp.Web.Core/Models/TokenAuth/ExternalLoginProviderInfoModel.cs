@@ -1,7 +1,7 @@
 ﻿using Abp.AutoMapper;
-using YkAbp.Authentication.External;
+using YkAbp.Web.Core.Authentication.External;
 
-namespace YkAbp.Models.TokenAuth
+namespace YkAbp.Web.Core.Models.TokenAuth
 {
     [AutoMapFrom(typeof(ExternalLoginProviderInfo))]
     public class ExternalLoginProviderInfoModel

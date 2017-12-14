@@ -1,8 +1,8 @@
 ﻿using Abp.Authorization;
-using YkAbp.Authorization.Roles;
-using YkAbp.Authorization.Users;
+using YkAbp.Core.Authorization.Roles;
+using YkAbp.Core.Authorization.Users;
 
-namespace YkAbp.Authorization
+namespace YkAbp.Core.Authorization
 {
     public class PermissionChecker : PermissionChecker<Role, User>
     {

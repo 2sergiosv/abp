@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace YkAbp.Users.Dto
+namespace YkAbp.Application.Users.Dto
 {
     public class ChangeUserLanguageDto
     {

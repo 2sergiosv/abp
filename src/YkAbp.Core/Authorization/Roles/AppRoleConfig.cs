@@ -1,7 +1,7 @@
 ﻿using Abp.MultiTenancy;
 using Abp.Zero.Configuration;
 
-namespace YkAbp.Authorization.Roles
+namespace YkAbp.Core.Authorization.Roles
 {
     public static class AppRoleConfig
     {

@@ -1,20 +1,19 @@
 ﻿using System.Collections.Generic;
-using System.Threading.Tasks;
 using System.Linq;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using Abp.Authorization;
 using Abp.Domain.Repositories;
 using Abp.IdentityFramework;
-using Abp.UI;
-using YkAbp.Authorization.Roles;
-using YkAbp.Authorization.Users;
-using YkAbp.Authorization;
-using YkAbp.Roles.Dto;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using YkAbp.Application.Roles.Dto;
+using YkAbp.Core.Authorization;
+using YkAbp.Core.Authorization.Roles;
+using YkAbp.Core.Authorization.Users;
 
-namespace YkAbp.Roles
+namespace YkAbp.Application.Roles
 {
     [AbpAuthorize(PermissionNames.Pages_Roles)]
     public class RoleAppService : AsyncCrudAppService<Role, RoleDto, int, PagedResultRequestDto, CreateRoleDto, RoleDto>, IRoleAppService

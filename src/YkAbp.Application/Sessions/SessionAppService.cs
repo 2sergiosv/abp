@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Abp.Auditing;
-using YkAbp.Sessions.Dto;
-using YkAbp.SignalR;
+using YkAbp.Application.Sessions.Dto;
+using YkAbp.Application.SignalR;
+using YkAbp.Core;
 
-namespace YkAbp.Sessions
+namespace YkAbp.Application.Sessions
 {
     public class SessionAppService : YkAbpAppServiceBase, ISessionAppService
     {

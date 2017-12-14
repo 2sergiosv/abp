@@ -2,7 +2,7 @@
 using Abp.Authorization.Users;
 using Abp.Extensions;
 
-namespace YkAbp.Authorization.Users
+namespace YkAbp.Core.Authorization.Users
 {
     public class User : AbpUser<User>
     {

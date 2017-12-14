@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Abp.Authorization.Users;
 
-namespace YkAbp.Models.TokenAuth
+namespace YkAbp.Web.Core.Models.TokenAuth
 {
     public class AuthenticateModel
     {

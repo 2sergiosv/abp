@@ -1,4 +1,4 @@
-namespace YkAbp.Authorization.Roles
+namespace YkAbp.Core.Authorization.Roles
 {
     public static class StaticRoleNames
     {

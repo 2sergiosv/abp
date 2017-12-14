@@ -3,10 +3,10 @@ using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using Abp.MultiTenancy;
 using Abp.Runtime.Caching;
-using YkAbp.Authorization.Users;
-using YkAbp.MultiTenancy;
+using YkAbp.Core.Authorization.Users;
+using YkAbp.Core.MultiTenancy;
 
-namespace YkAbp.Features
+namespace YkAbp.Core.Features
 {
     public class FeatureValueStore : AbpFeatureValueStore<Tenant, User>
     {

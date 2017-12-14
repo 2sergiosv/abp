@@ -1,10 +1,10 @@
 using System.Threading.Tasks;
 using Abp.Configuration;
 using Abp.Zero.Configuration;
-using YkAbp.Authorization.Accounts.Dto;
-using YkAbp.Authorization.Users;
+using YkAbp.Application.Authorization.Accounts.Dto;
+using YkAbp.Core.Authorization.Users;
 
-namespace YkAbp.Authorization.Accounts
+namespace YkAbp.Application.Authorization.Accounts
 {
     public class AccountAppService : YkAbpAppServiceBase, IAccountAppService
     {

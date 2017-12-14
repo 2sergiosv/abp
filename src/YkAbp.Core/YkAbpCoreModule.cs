@@ -3,14 +3,14 @@ using Abp.Reflection.Extensions;
 using Abp.Timing;
 using Abp.Zero;
 using Abp.Zero.Configuration;
-using YkAbp.Authorization.Roles;
-using YkAbp.Authorization.Users;
-using YkAbp.Configuration;
-using YkAbp.Localization;
-using YkAbp.MultiTenancy;
-using YkAbp.Timing;
+using YkAbp.Core.Authorization.Roles;
+using YkAbp.Core.Authorization.Users;
+using YkAbp.Core.Configuration;
+using YkAbp.Core.Localization;
+using YkAbp.Core.MultiTenancy;
+using YkAbp.Core.Timing;
 
-namespace YkAbp
+namespace YkAbp.Core
 {
     [DependsOn(typeof(AbpZeroCoreModule))]
     public class YkAbpCoreModule : AbpModule

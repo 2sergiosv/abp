@@ -1,12 +1,10 @@
-﻿using System;
-using Abp.Notifications;
+﻿using Abp.Zero.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Abp.Zero.EntityFrameworkCore;
-using YkAbp.Authorization.Roles;
-using YkAbp.Authorization.Users;
-using YkAbp.MultiTenancy;
+using YkAbp.Core.Authorization.Roles;
+using YkAbp.Core.Authorization.Users;
+using YkAbp.Core.MultiTenancy;
 
-namespace YkAbp.EntityFrameworkCore
+namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore
 {
     public class YkAbpDbContext : AbpZeroDbContext<Tenant, Role, User, YkAbpDbContext>
     {

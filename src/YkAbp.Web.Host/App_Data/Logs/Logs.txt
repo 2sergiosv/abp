@@ -110,3 +110,540 @@ INFO  2017-12-14 10:30:11,187 [12   ] NetCore.StaticFiles.StaticFileMiddleware -
 INFO  2017-12-14 10:30:11,194 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/on-complete.js'. Physical path: 'D:\Projects\201712_YkAbp\ykabp\src\YkAbp.Web.Host\wwwroot\swagger\ui\on-complete.js'
 INFO  2017-12-14 10:30:11,204 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 54.0267ms 200 application/javascript
 INFO  2017-12-14 10:30:11,215 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 69.4977ms 200 application/javascript
+DEBUG 2017-12-14 11:25:04,284 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-14 11:25:04,391 [1    ] Abp.Modules.AbpModuleManager             - Found 14 ABP modules in total.
+DEBUG 2017-12-14 11:25:04,401 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YkAbp.Web.Host.Startup.YkAbpWebHostModule, YkAbp.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 11:25:04,404 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YkAbp.Web.Core.YkAbpWebCoreModule, YkAbp.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 11:25:04,404 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YkAbp.Application.YkAbpApplicationModule, YkAbp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 11:25:04,404 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YkAbp.Core.YkAbpCoreModule, YkAbp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 11:25:04,405 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 11:25:04,405 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 11:25:04,405 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 11:25:04,405 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 11:25:04,406 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YkAbp.EntityFrameworkCore.EntityFrameworkCore.YkAbpEntityFrameworkModule, YkAbp.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 11:25:04,406 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 11:25:04,406 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 11:25:04,406 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 11:25:04,407 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 11:25:04,407 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 11:25:04,410 [1    ] Abp.Modules.AbpModuleManager             - 14 modules loaded.
+DEBUG 2017-12-14 11:25:04,473 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-14 11:25:04,473 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-14 11:25:04,473 [1    ] o.Configuration.LanguageManagementConfig - Converted YkAbp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-14 11:25:04,473 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-14 11:25:04,725 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: YkAbp.EntityFrameworkCore.EntityFrameworkCore.YkAbpDbContext, YkAbp.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 11:25:05,470 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-12-14 11:25:05,479 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-14 11:25:05,482 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-12-14 11:25:05,482 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: YkAbp
+DEBUG 2017-12-14 11:25:05,483 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-14 11:25:05,639 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-14 11:25:05,674 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2017-12-14 11:25:05,674 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Web.Core.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2017-12-14 11:25:05,677 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Application.Users.Dto.CreateUserDto
+DEBUG 2017-12-14 11:25:05,677 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Application.Users.Dto.UserDto
+DEBUG 2017-12-14 11:25:05,677 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Application.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-12-14 11:25:05,677 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Application.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-12-14 11:25:05,677 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Application.Roles.Dto.CreateRoleDto
+DEBUG 2017-12-14 11:25:05,677 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Application.Roles.Dto.PermissionDto
+DEBUG 2017-12-14 11:25:05,677 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Application.Roles.Dto.RoleDto
+DEBUG 2017-12-14 11:25:05,678 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Application.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2017-12-14 11:25:05,678 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Application.MultiTenancy.Dto.TenantDto
+INFO  2017-12-14 11:25:27,754 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2017-12-14 11:25:31,109 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Web.Host.Controllers.HomeController.Index (YkAbp.Web.Host) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-14 11:25:31,325 [10   ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2017-12-14 11:25:31,352 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Web.Host.Controllers.HomeController.Index (YkAbp.Web.Host) in 983.9138ms
+INFO  2017-12-14 11:25:31,367 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3617.2088ms 302 
+INFO  2017-12-14 11:25:31,406 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/  
+INFO  2017-12-14 11:25:31,441 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/index.html'. Physical path: 'N/A'
+INFO  2017-12-14 11:25:31,451 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 61.7345ms 200 text/html
+INFO  2017-12-14 11:25:31,470 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/reset.css  
+INFO  2017-12-14 11:25:31,477 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery-1.8.0.min.js  
+INFO  2017-12-14 11:25:31,541 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/reset.css was not modified
+INFO  2017-12-14 11:25:31,543 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/object-assign-pollyfill.js  
+INFO  2017-12-14 11:25:31,593 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/screen.css  
+INFO  2017-12-14 11:25:31,635 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/screen.css was not modified
+INFO  2017-12-14 11:25:31,642 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.slideto.min.js  
+INFO  2017-12-14 11:25:31,713 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/object-assign-pollyfill.js was not modified
+INFO  2017-12-14 11:25:31,746 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-1.8.0.min.js was not modified
+INFO  2017-12-14 11:25:31,752 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 113.8725ms 304 text/css
+INFO  2017-12-14 11:25:31,761 [16   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.slideto.min.js was not modified
+INFO  2017-12-14 11:25:31,773 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.wiggle.min.js  
+INFO  2017-12-14 11:25:31,779 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 277.0571ms 304 application/javascript
+INFO  2017-12-14 11:25:31,808 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 239.7708ms 304 application/javascript
+INFO  2017-12-14 11:25:31,830 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 92.4962ms 304 text/css
+INFO  2017-12-14 11:25:31,839 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.wiggle.min.js was not modified
+INFO  2017-12-14 11:25:31,844 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 171.8643ms 304 application/javascript
+INFO  2017-12-14 11:25:31,852 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 80.8754ms 304 application/javascript
+INFO  2017-12-14 11:25:31,861 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.min.js  
+INFO  2017-12-14 11:25:31,868 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/lodash.min.js  
+INFO  2017-12-14 11:25:31,898 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.min.js was not modified
+INFO  2017-12-14 11:25:31,958 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/lodash.min.js was not modified
+INFO  2017-12-14 11:25:31,988 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 44.344ms 304 application/javascript
+INFO  2017-12-14 11:25:31,992 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.ba-bbq.min.js  
+INFO  2017-12-14 11:25:32,051 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/handlebars-4.0.5.js  
+INFO  2017-12-14 11:25:32,057 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.ba-bbq.min.js was not modified
+INFO  2017-12-14 11:25:32,067 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 166.718ms 304 application/javascript
+INFO  2017-12-14 11:25:32,096 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/backbone-min.js  
+INFO  2017-12-14 11:25:32,133 [16   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/backbone-min.js was not modified
+INFO  2017-12-14 11:25:32,161 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack.js  
+INFO  2017-12-14 11:25:32,170 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 177.3937ms 304 application/javascript
+INFO  2017-12-14 11:25:32,214 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack_extended.js  
+INFO  2017-12-14 11:25:32,234 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/typography.css  
+INFO  2017-12-14 11:25:32,247 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jsoneditor.min.js  
+INFO  2017-12-14 11:25:32,270 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/handlebars-4.0.5.js was not modified
+INFO  2017-12-14 11:25:32,284 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 205.8103ms 304 application/javascript
+INFO  2017-12-14 11:25:32,304 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/highlight.9.1.0.pack_extended.js was not modified
+INFO  2017-12-14 11:25:32,316 [17   ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/typography.css was not modified
+INFO  2017-12-14 11:25:32,335 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/marked.js  
+INFO  2017-12-14 11:25:32,354 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 365.811ms 304 application/javascript
+INFO  2017-12-14 11:25:32,361 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/highlight.9.1.0.pack.js was not modified
+INFO  2017-12-14 11:25:32,386 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 220.5831ms 304 text/css
+INFO  2017-12-14 11:25:32,392 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jsoneditor.min.js was not modified
+INFO  2017-12-14 11:25:32,405 [16   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/marked.js was not modified
+INFO  2017-12-14 11:25:32,463 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 111.0796ms 304 application/javascript
+INFO  2017-12-14 11:25:32,470 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 342.0857ms 304 application/javascript
+INFO  2017-12-14 11:25:32,485 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 270.3961ms 304 application/javascript
+INFO  2017-12-14 11:25:32,490 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 120.5507ms 304 application/javascript
+INFO  2017-12-14 11:25:32,520 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/swagger-oauth.js  
+INFO  2017-12-14 11:25:32,523 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/logo_small.png  
+INFO  2017-12-14 11:25:32,546 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/swagger-oauth.js was not modified
+INFO  2017-12-14 11:25:32,571 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/print.css  
+INFO  2017-12-14 11:25:32,573 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /images/logo_small.png was not modified
+INFO  2017-12-14 11:25:32,600 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 96.1366ms 304 application/javascript
+INFO  2017-12-14 11:25:32,621 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/print.css was not modified
+INFO  2017-12-14 11:25:32,643 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 68.2817ms 304 text/css
+INFO  2017-12-14 11:25:32,668 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2017-12-14 11:25:32,670 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 76.2578ms 304 image/png
+INFO  2017-12-14 11:25:32,900 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 290.7671ms 200 application/json
+INFO  2017-12-14 11:25:33,133 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js?_=1513221933110  
+INFO  2017-12-14 11:25:33,179 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/on-complete.js?_=1513221933111  
+INFO  2017-12-14 11:25:33,183 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\Projects\201712_YkAbp\ykabp\src\YkAbp.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2017-12-14 11:25:33,207 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/on-complete.js'. Physical path: 'D:\Projects\201712_YkAbp\ykabp\src\YkAbp.Web.Host\wwwroot\swagger\ui\on-complete.js'
+INFO  2017-12-14 11:25:33,220 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 88.3704ms 200 application/javascript
+INFO  2017-12-14 11:25:33,229 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 92.7803ms 200 application/javascript
+DEBUG 2017-12-14 14:03:08,552 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-14 14:03:08,639 [1    ] Abp.Modules.AbpModuleManager             - Found 14 ABP modules in total.
+DEBUG 2017-12-14 14:03:08,649 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YkAbp.Web.Host.Startup.YkAbpWebHostModule, YkAbp.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 14:03:08,652 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YkAbp.Web.Core.YkAbpWebCoreModule, YkAbp.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 14:03:08,652 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YkAbp.Application.YkAbpApplicationModule, YkAbp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 14:03:08,652 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YkAbp.Core.YkAbpCoreModule, YkAbp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 14:03:08,652 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 14:03:08,652 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 14:03:08,653 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 14:03:08,653 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 14:03:08,653 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: YkAbp.EntityFrameworkCore.EntityFrameworkCore.YkAbpEntityFrameworkModule, YkAbp.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 14:03:08,654 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 14:03:08,654 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 14:03:08,654 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 14:03:08,654 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 14:03:08,655 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 14:03:08,657 [1    ] Abp.Modules.AbpModuleManager             - 14 modules loaded.
+DEBUG 2017-12-14 14:03:08,757 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-14 14:03:08,757 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-14 14:03:08,757 [1    ] o.Configuration.LanguageManagementConfig - Converted YkAbp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-14 14:03:08,757 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-12-14 14:03:09,061 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: YkAbp.EntityFrameworkCore.EntityFrameworkCore.YkAbpDbContext, YkAbp.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-14 14:03:09,432 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-12-14 14:03:09,485 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-14 14:03:09,492 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-12-14 14:03:09,492 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: YkAbp
+DEBUG 2017-12-14 14:03:09,493 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-14 14:03:09,533 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-14 14:03:09,567 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2017-12-14 14:03:09,567 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Web.Core.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2017-12-14 14:03:09,569 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Application.Users.Dto.CreateUserDto
+DEBUG 2017-12-14 14:03:09,570 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Application.Users.Dto.UserDto
+DEBUG 2017-12-14 14:03:09,570 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Application.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-12-14 14:03:09,570 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Application.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-12-14 14:03:09,570 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Application.Roles.Dto.CreateRoleDto
+DEBUG 2017-12-14 14:03:09,570 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Application.Roles.Dto.PermissionDto
+DEBUG 2017-12-14 14:03:09,570 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Application.Roles.Dto.RoleDto
+DEBUG 2017-12-14 14:03:09,570 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Application.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2017-12-14 14:03:09,570 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - YkAbp.Application.MultiTenancy.Dto.TenantDto
+INFO  2017-12-14 14:03:32,000 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2017-12-14 14:03:32,998 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Web.Host.Controllers.HomeController.Index (YkAbp.Web.Host) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-14 14:03:33,147 [5    ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2017-12-14 14:03:33,160 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Web.Host.Controllers.HomeController.Index (YkAbp.Web.Host) in 330.9088ms
+INFO  2017-12-14 14:03:33,179 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1183.5152ms 302 
+INFO  2017-12-14 14:03:33,204 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2017-12-14 14:03:33,213 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.8767ms 301 
+INFO  2017-12-14 14:03:33,217 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/  
+INFO  2017-12-14 14:03:33,258 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/index.html'. Physical path: 'N/A'
+INFO  2017-12-14 14:03:33,261 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 44.3645ms 200 text/html
+INFO  2017-12-14 14:03:33,291 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/reset.css  
+INFO  2017-12-14 14:03:33,292 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/typography.css  
+INFO  2017-12-14 14:03:33,296 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/typography.css'. Physical path: 'N/A'
+INFO  2017-12-14 14:03:33,296 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.3967ms 200 text/css
+INFO  2017-12-14 14:03:33,296 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/screen.css  
+INFO  2017-12-14 14:03:33,297 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/object-assign-pollyfill.js  
+INFO  2017-12-14 14:03:33,340 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.wiggle.min.js  
+INFO  2017-12-14 14:03:33,340 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.slideto.min.js  
+INFO  2017-12-14 14:03:33,343 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/reset.css'. Physical path: 'N/A'
+INFO  2017-12-14 14:03:33,343 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/screen.css'. Physical path: 'N/A'
+INFO  2017-12-14 14:03:33,344 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 52.4185ms 200 text/css
+INFO  2017-12-14 14:03:33,351 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/object-assign-pollyfill.js'. Physical path: 'N/A'
+INFO  2017-12-14 14:03:33,351 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 54.2193ms 200 application/javascript
+INFO  2017-12-14 14:03:33,354 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/handlebars-4.0.5.js  
+INFO  2017-12-14 14:03:33,355 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.ba-bbq.min.js  
+INFO  2017-12-14 14:03:33,377 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 80.66ms 200 text/css
+INFO  2017-12-14 14:03:33,378 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery-1.8.0.min.js  
+INFO  2017-12-14 14:03:33,386 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.wiggle.min.js'. Physical path: 'N/A'
+INFO  2017-12-14 14:03:33,386 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.ba-bbq.min.js was not modified
+INFO  2017-12-14 14:03:33,387 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 47.0405ms 200 application/javascript
+INFO  2017-12-14 14:03:33,387 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/handlebars-4.0.5.js was not modified
+INFO  2017-12-14 14:03:33,387 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/lodash.min.js  
+INFO  2017-12-14 14:03:33,387 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-1.8.0.min.js was not modified
+INFO  2017-12-14 14:03:33,387 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.7574ms 304 application/javascript
+INFO  2017-12-14 14:03:33,387 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.8147ms 304 application/javascript
+INFO  2017-12-14 14:03:33,388 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.slideto.min.js'. Physical path: 'N/A'
+INFO  2017-12-14 14:03:33,387 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 33.6765ms 304 application/javascript
+INFO  2017-12-14 14:03:33,388 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 47.8967ms 200 application/javascript
+INFO  2017-12-14 14:03:33,393 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack_extended.js  
+INFO  2017-12-14 14:03:33,395 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/lodash.min.js was not modified
+INFO  2017-12-14 14:03:33,395 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.0449ms 304 application/javascript
+INFO  2017-12-14 14:03:33,396 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/highlight.9.1.0.pack_extended.js'. Physical path: 'N/A'
+INFO  2017-12-14 14:03:33,396 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.1874ms 200 application/javascript
+INFO  2017-12-14 14:03:33,452 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/backbone-min.js  
+INFO  2017-12-14 14:03:33,453 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.min.js  
+INFO  2017-12-14 14:03:33,454 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/swagger-oauth.js  
+INFO  2017-12-14 14:03:33,455 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/marked.js  
+INFO  2017-12-14 14:03:33,455 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack.js  
+INFO  2017-12-14 14:03:33,458 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/swagger-oauth.js was not modified
+INFO  2017-12-14 14:03:33,458 [16   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/backbone-min.js was not modified
+INFO  2017-12-14 14:03:33,458 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.9028ms 304 application/javascript
+INFO  2017-12-14 14:03:33,458 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.8219ms 304 application/javascript
+INFO  2017-12-14 14:03:33,458 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/marked.js was not modified
+INFO  2017-12-14 14:03:33,458 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jsoneditor.min.js  
+INFO  2017-12-14 14:03:33,458 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.1845ms 304 application/javascript
+INFO  2017-12-14 14:03:33,458 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/highlight.9.1.0.pack.js was not modified
+INFO  2017-12-14 14:03:33,459 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.4498ms 304 application/javascript
+INFO  2017-12-14 14:03:33,460 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jsoneditor.min.js was not modified
+INFO  2017-12-14 14:03:33,460 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.7239ms 304 application/javascript
+INFO  2017-12-14 14:03:33,511 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.min.js was not modified
+INFO  2017-12-14 14:03:33,512 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 58.5903ms 304 application/javascript
+INFO  2017-12-14 14:03:33,562 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/logo_small.png  
+INFO  2017-12-14 14:03:33,563 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/logo_small.png'. Physical path: 'N/A'
+INFO  2017-12-14 14:03:33,563 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.3103ms 200 image/png
+INFO  2017-12-14 14:03:33,567 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/print.css  
+INFO  2017-12-14 14:03:33,568 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/print.css'. Physical path: 'N/A'
+INFO  2017-12-14 14:03:33,569 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.4822ms 200 text/css
+INFO  2017-12-14 14:03:33,836 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2017-12-14 14:03:33,905 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/favicon-32x32.png  
+INFO  2017-12-14 14:03:33,906 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2017-12-14 14:03:33,907 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.4217ms 200 image/png
+INFO  2017-12-14 14:03:33,914 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/favicon-16x16.png  
+INFO  2017-12-14 14:03:33,915 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/favicon-16x16.png'. Physical path: 'N/A'
+INFO  2017-12-14 14:03:33,915 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.4345ms 200 image/png
+INFO  2017-12-14 14:03:34,050 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 214.3269ms 200 application/json
+INFO  2017-12-14 14:03:34,326 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js?_=1513231414248  
+INFO  2017-12-14 14:03:34,326 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/on-complete.js?_=1513231414249  
+INFO  2017-12-14 14:03:34,326 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/on-complete.js'. Physical path: 'D:\Projects\201712_YkAbp\ykabp\src\YkAbp.Web.Host\wwwroot\swagger\ui\on-complete.js'
+INFO  2017-12-14 14:03:34,326 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\Projects\201712_YkAbp\ykabp\src\YkAbp.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2017-12-14 14:03:34,339 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 13.8613ms 200 application/javascript
+INFO  2017-12-14 14:03:34,340 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 13.9362ms 200 application/javascript
+INFO  2017-12-14 14:07:43,760 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2017-12-14 14:07:43,761 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:07:43,762 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.4997ms 204 
+INFO  2017-12-14 14:07:43,767 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/AbpUserConfiguration/GetAll application/json 
+INFO  2017-12-14 14:07:43,767 [18   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:07:43,767 [18   ] uthentication.JwtBearer.JwtBearerHandler - Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token: null
+INFO  2017-12-14 14:07:43,991 [18   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:07:43,994 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-14 14:07:44,386 [11   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value Abp.Web.Models.AjaxResponse.
+INFO  2017-12-14 14:07:44,474 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 483.5252ms
+INFO  2017-12-14 14:07:44,475 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 708.1091ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:07:44,484 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2017-12-14 14:07:44,484 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:07:44,484 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.3451ms 204 
+INFO  2017-12-14 14:07:44,489 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations application/json 
+INFO  2017-12-14 14:07:44,489 [18   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:07:44,498 [18   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:07:44,564 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.Sessions.SessionAppService.GetCurrentLoginInformations (YkAbp.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-14 14:07:44,571 [18   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:07:44,594 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.Sessions.SessionAppService.GetCurrentLoginInformations (YkAbp.Application) in 95.8444ms
+INFO  2017-12-14 14:07:44,594 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 104.7354ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:08:07,065 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2017-12-14 14:08:07,065 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:08:07,065 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.5239ms 204 
+INFO  2017-12-14 14:08:07,075 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/AbpUserConfiguration/GetAll application/json 
+INFO  2017-12-14 14:08:07,075 [18   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:08:07,075 [18   ] uthentication.JwtBearer.JwtBearerHandler - Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token: null
+INFO  2017-12-14 14:08:07,080 [18   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:08:07,082 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-14 14:08:07,159 [17   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value Abp.Web.Models.AjaxResponse.
+INFO  2017-12-14 14:08:07,160 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 79.4586ms
+INFO  2017-12-14 14:08:07,160 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 85.6909ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:08:07,172 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2017-12-14 14:08:07,172 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:08:07,173 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.3439ms 204 
+INFO  2017-12-14 14:08:07,198 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations application/json 
+INFO  2017-12-14 14:08:07,198 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:08:07,201 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:08:07,203 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.Sessions.SessionAppService.GetCurrentLoginInformations (YkAbp.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-14 14:08:07,206 [5    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:08:07,206 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.Sessions.SessionAppService.GetCurrentLoginInformations (YkAbp.Application) in 5.4323ms
+INFO  2017-12-14 14:08:07,206 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.3112ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:08:27,530 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/TokenAuth/Authenticate  
+INFO  2017-12-14 14:08:27,530 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:08:27,530 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.2992ms 204 
+INFO  2017-12-14 14:08:27,544 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json 77
+INFO  2017-12-14 14:08:27,544 [18   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:08:27,614 [18   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:08:27,809 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Web.Core.Controllers.TokenAuthController.Authenticate (YkAbp.Web.Core) with arguments (YkAbp.Web.Core.Models.TokenAuth.AuthenticateModel) - ModelState is Valid
+INFO  2017-12-14 14:08:31,674 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json 77
+INFO  2017-12-14 14:08:31,674 [18   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:08:31,676 [18   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:08:31,679 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Web.Core.Controllers.TokenAuthController.Authenticate (YkAbp.Web.Core) with arguments (YkAbp.Web.Core.Models.TokenAuth.AuthenticateModel) - ModelState is Valid
+INFO  2017-12-14 14:08:38,814 [19   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:08:38,816 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Web.Core.Controllers.TokenAuthController.Authenticate (YkAbp.Web.Core) in 11201.7026ms
+INFO  2017-12-14 14:08:38,828 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11283.3767ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:08:40,353 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2017-12-14 14:08:40,354 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:08:40,354 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.5704ms 204 
+INFO  2017-12-14 14:08:40,364 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/AbpUserConfiguration/GetAll application/json 
+INFO  2017-12-14 14:08:40,364 [16   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:08:40,376 [16   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 14:08:40,376 [16   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 14:08:40,559 [19   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:08:40,560 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-14 14:08:40,779 [17   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value Abp.Web.Models.AjaxResponse.
+INFO  2017-12-14 14:08:40,780 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 220.6191ms
+INFO  2017-12-14 14:08:40,780 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 415.6599ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:08:40,794 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2017-12-14 14:08:40,794 [16   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:08:40,794 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.2761ms 204 
+INFO  2017-12-14 14:08:40,799 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations application/json 
+INFO  2017-12-14 14:08:40,800 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:08:40,801 [22   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 14:08:40,801 [22   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 14:08:40,803 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:08:40,805 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.Sessions.SessionAppService.GetCurrentLoginInformations (YkAbp.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-14 14:08:40,835 [17   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:08:40,838 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.Sessions.SessionAppService.GetCurrentLoginInformations (YkAbp.Application) in 35.1339ms
+INFO  2017-12-14 14:08:40,838 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 38.7316ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:08:42,000 [17   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:08:42,000 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Web.Core.Controllers.TokenAuthController.Authenticate (YkAbp.Web.Core) in 10323.9541ms
+INFO  2017-12-14 14:08:42,000 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10326.7619ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:09:02,754 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/User/ChangeLanguage  
+INFO  2017-12-14 14:09:02,754 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:02,755 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.5201ms 204 
+INFO  2017-12-14 14:09:02,765 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/User/ChangeLanguage application/json 21
+INFO  2017-12-14 14:09:02,765 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:02,766 [22   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 14:09:02,766 [22   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 14:09:02,774 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:02,828 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.Users.UserAppService.ChangeLanguage (YkAbp.Application) with arguments (YkAbp.Application.Users.Dto.ChangeUserLanguageDto) - ModelState is Valid
+INFO  2017-12-14 14:09:03,122 [17   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:09:03,123 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.Users.UserAppService.ChangeLanguage (YkAbp.Application) in 349.3229ms
+INFO  2017-12-14 14:09:03,123 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 357.4577ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:09:03,557 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2017-12-14 14:09:03,558 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:03,558 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.3237ms 204 
+INFO  2017-12-14 14:09:03,585 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/AbpUserConfiguration/GetAll application/json 
+INFO  2017-12-14 14:09:03,585 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:03,586 [22   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 14:09:03,586 [22   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 14:09:03,667 [17   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:03,668 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-14 14:09:03,739 [17   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value Abp.Web.Models.AjaxResponse.
+INFO  2017-12-14 14:09:03,739 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 72.7518ms
+INFO  2017-12-14 14:09:03,740 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 154.5922ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:09:03,753 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2017-12-14 14:09:03,753 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:03,753 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.3384ms 204 
+INFO  2017-12-14 14:09:03,758 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations application/json 
+INFO  2017-12-14 14:09:03,758 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:03,758 [22   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 14:09:03,758 [22   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 14:09:03,762 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:03,763 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.Sessions.SessionAppService.GetCurrentLoginInformations (YkAbp.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-14 14:09:03,769 [17   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:09:03,770 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.Sessions.SessionAppService.GetCurrentLoginInformations (YkAbp.Application) in 7.8331ms
+INFO  2017-12-14 14:09:03,770 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12.0296ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:09:14,652 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Tenant/GetAll?SkipCount=0&MaxResultCount=10  
+INFO  2017-12-14 14:09:14,653 [21   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:14,654 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.7683ms 204 
+INFO  2017-12-14 14:09:14,693 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Tenant/GetAll?SkipCount=0&MaxResultCount=10 application/json 
+INFO  2017-12-14 14:09:14,693 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:14,693 [6    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 14:09:14,693 [6    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 14:09:14,709 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:14,791 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.MultiTenancy.TenantAppService.GetAll (YkAbp.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - ModelState is Valid
+INFO  2017-12-14 14:09:15,036 [17   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:09:15,043 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.MultiTenancy.TenantAppService.GetAll (YkAbp.Application) in 334.0299ms
+INFO  2017-12-14 14:09:15,043 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 350.8826ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:09:20,202 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Tenant/Get?Id=1  
+INFO  2017-12-14 14:09:20,203 [18   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:20,203 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.7671ms 204 
+INFO  2017-12-14 14:09:20,211 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Tenant/Get?Id=1 application/json 
+INFO  2017-12-14 14:09:20,211 [16   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:20,213 [16   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 14:09:20,213 [16   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 14:09:20,218 [16   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:20,221 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.MultiTenancy.TenantAppService.Get (YkAbp.Application) with arguments (Abp.Application.Services.Dto.EntityDto`1[System.Int32]) - ModelState is Valid
+INFO  2017-12-14 14:09:20,366 [17   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:09:20,366 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.MultiTenancy.TenantAppService.Get (YkAbp.Application) in 148.0926ms
+INFO  2017-12-14 14:09:20,366 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 155.1457ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:09:27,424 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/User/GetAll?SkipCount=0&MaxResultCount=10  
+INFO  2017-12-14 14:09:27,424 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:27,424 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.258ms 204 
+INFO  2017-12-14 14:09:27,425 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/User/GetRoles  
+INFO  2017-12-14 14:09:27,426 [21   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:27,426 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.8825ms 204 
+INFO  2017-12-14 14:09:27,438 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetAll?SkipCount=0&MaxResultCount=10 application/json 
+INFO  2017-12-14 14:09:27,438 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetRoles application/json 
+INFO  2017-12-14 14:09:27,438 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:27,438 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:27,439 [22   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 14:09:27,439 [22   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 14:09:27,439 [6    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 14:09:27,439 [6    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 14:09:27,444 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:27,445 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:27,446 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.Users.UserAppService.GetAll (YkAbp.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - ModelState is Valid
+INFO  2017-12-14 14:09:27,446 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.Users.UserAppService.GetRoles (YkAbp.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-14 14:09:27,536 [17   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:09:27,540 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.Users.UserAppService.GetRoles (YkAbp.Application) in 94.9256ms
+INFO  2017-12-14 14:09:27,540 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 102.3262ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:09:27,836 [20   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:09:27,842 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.Users.UserAppService.GetAll (YkAbp.Application) in 397.1923ms
+INFO  2017-12-14 14:09:27,842 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 403.7918ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:09:57,033 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10  
+INFO  2017-12-14 14:09:57,033 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:57,033 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.31ms 204 
+INFO  2017-12-14 14:09:57,034 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAllPermissions  
+INFO  2017-12-14 14:09:57,034 [16   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:57,034 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.4728ms 204 
+INFO  2017-12-14 14:09:57,039 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAllPermissions  
+INFO  2017-12-14 14:09:57,039 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:57,039 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.7007ms 204 
+INFO  2017-12-14 14:09:57,050 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10 application/json 
+INFO  2017-12-14 14:09:57,050 [21   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:57,051 [21   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 14:09:57,051 [21   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 14:09:57,056 [21   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:57,060 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAllPermissions application/json 
+INFO  2017-12-14 14:09:57,060 [18   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:57,060 [18   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 14:09:57,060 [18   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 14:09:57,065 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAllPermissions application/json 
+INFO  2017-12-14 14:09:57,066 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:57,068 [22   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 14:09:57,068 [22   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 14:09:57,068 [18   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:57,070 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:09:57,103 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.Roles.RoleAppService.GetAllPermissions (YkAbp.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-14 14:09:57,103 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.Roles.RoleAppService.GetAllPermissions (YkAbp.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-14 14:09:57,104 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.Roles.RoleAppService.GetAll (YkAbp.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - ModelState is Valid
+WARN  2017-12-14 14:09:57,112 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Users' in localization source 'YkAbp'!
+WARN  2017-12-14 14:09:57,112 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'Users' in localization source 'YkAbp'!
+WARN  2017-12-14 14:09:57,116 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Roles' in localization source 'YkAbp'!
+WARN  2017-12-14 14:09:57,117 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tenants' in localization source 'YkAbp'!
+WARN  2017-12-14 14:09:57,119 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'Roles' in localization source 'YkAbp'!
+WARN  2017-12-14 14:09:57,119 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tenants' in localization source 'YkAbp'!
+INFO  2017-12-14 14:09:57,178 [23   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:09:57,183 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.Roles.RoleAppService.GetAllPermissions (YkAbp.Application) in 112.5592ms
+INFO  2017-12-14 14:09:57,183 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 121.1749ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:09:57,230 [25   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:09:57,231 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.Roles.RoleAppService.GetAllPermissions (YkAbp.Application) in 163.0875ms
+INFO  2017-12-14 14:09:57,232 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 172.7565ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:09:57,232 [20   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:09:57,234 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.Roles.RoleAppService.GetAll (YkAbp.Application) in 177.9384ms
+INFO  2017-12-14 14:09:57,234 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 184.0769ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:10:21,079 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10  
+INFO  2017-12-14 14:10:21,079 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:10:21,079 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.3439ms 204 
+INFO  2017-12-14 14:10:21,084 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAllPermissions  
+INFO  2017-12-14 14:10:21,084 [16   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:10:21,084 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.2837ms 204 
+INFO  2017-12-14 14:10:21,088 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAllPermissions  
+INFO  2017-12-14 14:10:21,088 [16   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:10:21,089 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.2536ms 204 
+INFO  2017-12-14 14:10:21,100 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAllPermissions application/json 
+INFO  2017-12-14 14:10:21,100 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:10:21,101 [22   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 14:10:21,101 [22   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 14:10:21,101 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10 application/json 
+INFO  2017-12-14 14:10:21,101 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAllPermissions application/json 
+INFO  2017-12-14 14:10:21,101 [21   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:10:21,101 [16   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:10:21,101 [21   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 14:10:21,101 [21   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 14:10:21,102 [16   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 14:10:21,102 [16   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 14:10:21,103 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:10:21,104 [21   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:10:21,105 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.Roles.RoleAppService.GetAllPermissions (YkAbp.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-14 14:10:21,106 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.Roles.RoleAppService.GetAll (YkAbp.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - ModelState is Valid
+WARN  2017-12-14 14:10:21,107 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Users' in localization source 'YkAbp'!
+WARN  2017-12-14 14:10:21,107 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Roles' in localization source 'YkAbp'!
+INFO  2017-12-14 14:10:21,107 [16   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+WARN  2017-12-14 14:10:21,107 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tenants' in localization source 'YkAbp'!
+INFO  2017-12-14 14:10:21,108 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.Roles.RoleAppService.GetAllPermissions (YkAbp.Application) with arguments ((null)) - ModelState is Valid
+WARN  2017-12-14 14:10:21,109 [16   ] naries.DictionaryBasedLocalizationSource - Can not find 'Users' in localization source 'YkAbp'!
+WARN  2017-12-14 14:10:21,109 [16   ] naries.DictionaryBasedLocalizationSource - Can not find 'Roles' in localization source 'YkAbp'!
+WARN  2017-12-14 14:10:21,110 [16   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tenants' in localization source 'YkAbp'!
+INFO  2017-12-14 14:10:21,232 [26   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:10:21,232 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.Roles.RoleAppService.GetAllPermissions (YkAbp.Application) in 128.7114ms
+INFO  2017-12-14 14:10:21,232 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 132.0026ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:10:21,298 [20   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:10:21,298 [27   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:10:21,298 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.Roles.RoleAppService.GetAllPermissions (YkAbp.Application) in 191.2636ms
+INFO  2017-12-14 14:10:21,298 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.Roles.RoleAppService.GetAll (YkAbp.Application) in 194.6673ms
+INFO  2017-12-14 14:10:21,299 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 197.4555ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:10:21,299 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 197.4795ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:10:33,535 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10  
+INFO  2017-12-14 14:10:33,536 [16   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:10:33,536 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.9889ms 204 
+INFO  2017-12-14 14:10:33,539 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAllPermissions  
+INFO  2017-12-14 14:10:33,539 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAllPermissions  
+INFO  2017-12-14 14:10:33,539 [21   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:10:33,539 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:10:33,539 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.237ms 204 
+INFO  2017-12-14 14:10:33,539 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.2638ms 204 
+INFO  2017-12-14 14:10:33,554 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10 application/json 
+INFO  2017-12-14 14:10:33,554 [24   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:10:33,554 [24   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 14:10:33,554 [24   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 14:10:33,555 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAllPermissions application/json 
+INFO  2017-12-14 14:10:33,555 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAllPermissions application/json 
+INFO  2017-12-14 14:10:33,556 [18   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:10:33,556 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:10:33,556 [22   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 14:10:33,556 [18   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 14:10:33,556 [22   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 14:10:33,556 [18   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 14:10:33,556 [24   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:10:33,557 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.Roles.RoleAppService.GetAll (YkAbp.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - ModelState is Valid
+INFO  2017-12-14 14:10:33,558 [22   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:10:33,558 [18   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 14:10:33,558 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.Roles.RoleAppService.GetAllPermissions (YkAbp.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-12-14 14:10:33,558 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.Roles.RoleAppService.GetAllPermissions (YkAbp.Application) with arguments ((null)) - ModelState is Valid
+WARN  2017-12-14 14:10:33,559 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Users' in localization source 'YkAbp'!
+WARN  2017-12-14 14:10:33,559 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'Users' in localization source 'YkAbp'!
+WARN  2017-12-14 14:10:33,559 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Roles' in localization source 'YkAbp'!
+WARN  2017-12-14 14:10:33,559 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'Roles' in localization source 'YkAbp'!
+WARN  2017-12-14 14:10:33,559 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tenants' in localization source 'YkAbp'!
+WARN  2017-12-14 14:10:33,559 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'Tenants' in localization source 'YkAbp'!
+INFO  2017-12-14 14:10:33,694 [20   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:10:33,694 [27   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:10:33,694 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.Roles.RoleAppService.GetAllPermissions (YkAbp.Application) in 136.3195ms
+INFO  2017-12-14 14:10:33,694 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.Roles.RoleAppService.GetAllPermissions (YkAbp.Application) in 136.3224ms
+INFO  2017-12-14 14:10:33,694 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 138.5946ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:10:33,694 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 138.5946ms 200 application/json; charset=utf-8
+INFO  2017-12-14 14:10:33,802 [20   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 14:10:33,802 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.Roles.RoleAppService.GetAll (YkAbp.Application) in 245.9026ms
+INFO  2017-12-14 14:10:33,803 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 248.8244ms 200 application/json; charset=utf-8
+INFO  2017-12-14 15:32:37,492 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/Get?Id=1  
+INFO  2017-12-14 15:32:37,493 [18   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 15:32:37,493 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.588ms 204 
+INFO  2017-12-14 15:32:37,500 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/Get?Id=1 application/json 
+INFO  2017-12-14 15:32:37,500 [26   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 15:32:37,503 [26   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-12-14 15:32:37,503 [26   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-12-14 15:32:37,530 [20   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-12-14 15:32:37,534 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method YkAbp.Application.Roles.RoleAppService.Get (YkAbp.Application) with arguments (Abp.Application.Services.Dto.EntityDto`1[System.Int32]) - ModelState is Valid
+INFO  2017-12-14 15:32:37,657 [25   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-12-14 15:32:37,658 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action YkAbp.Application.Roles.RoleAppService.Get (YkAbp.Application) in 127.5126ms
+INFO  2017-12-14 15:32:37,658 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 158.5874ms 200 application/json; charset=utf-8

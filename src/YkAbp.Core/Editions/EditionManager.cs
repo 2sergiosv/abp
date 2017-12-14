@@ -2,7 +2,7 @@
 using Abp.Application.Features;
 using Abp.Domain.Repositories;
 
-namespace YkAbp.Editions
+namespace YkAbp.Core.Editions
 {
     public class EditionManager : AbpEditionManager
     {

@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Abp.Dependency;
 
-namespace YkAbp.Authentication.External
+namespace YkAbp.Web.Core.Authentication.External
 {
     public abstract class ExternalAuthProviderApiBase : IExternalAuthProviderApi, ITransientDependency
     {

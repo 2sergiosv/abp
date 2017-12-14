@@ -1,4 +1,4 @@
-﻿namespace YkAbp.Models.TokenAuth
+﻿namespace YkAbp.Web.Core.Models.TokenAuth
 {
     public class AuthenticateResultModel
     {

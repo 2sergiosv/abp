@@ -3,7 +3,7 @@ using Abp.Localization.Dictionaries;
 using Abp.Localization.Dictionaries.Xml;
 using Abp.Reflection.Extensions;
 
-namespace YkAbp.Localization
+namespace YkAbp.Core.Localization
 {
     public static class YkAbpLocalizationConfigurer
     {

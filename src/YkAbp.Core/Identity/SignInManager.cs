@@ -1,16 +1,16 @@
-﻿using Microsoft.AspNetCore.Authentication;
+﻿using Abp.Authorization;
+using Abp.Configuration;
+using Abp.Domain.Uow;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Abp.Authorization;
-using Abp.Configuration;
-using Abp.Domain.Uow;
-using YkAbp.Authorization.Roles;
-using YkAbp.Authorization.Users;
-using YkAbp.MultiTenancy;
+using YkAbp.Core.Authorization.Roles;
+using YkAbp.Core.Authorization.Users;
+using YkAbp.Core.MultiTenancy;
 
-namespace YkAbp.Identity
+namespace YkAbp.Core.Identity
 {
     public class SignInManager : AbpSignInManager<Tenant, Role, User>
     {

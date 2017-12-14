@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using YkAbp.Authorization.Users;
+using YkAbp.Core.Authorization.Users;
 
-namespace YkAbp.Users.Dto
+namespace YkAbp.Application.Users.Dto
 {
     public class UserMapProfile : Profile
     {

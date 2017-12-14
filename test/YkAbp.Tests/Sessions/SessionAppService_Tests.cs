@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Shouldly;
 using Xunit;
-using YkAbp.Sessions;
+using YkAbp.Application.Sessions;
 
 namespace YkAbp.Tests.Sessions
 {

@@ -1,4 +1,4 @@
-﻿namespace YkAbp
+﻿namespace YkAbp.Core
 {
     public class YkAbpConsts
     {

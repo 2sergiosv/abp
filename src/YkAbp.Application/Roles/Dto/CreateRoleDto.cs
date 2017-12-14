@@ -1,11 +1,10 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Abp.AutoMapper;
-using YkAbp.Authorization.Roles;
-
 using Abp.Authorization.Roles;
+using Abp.AutoMapper;
+using YkAbp.Core.Authorization.Roles;
 
-namespace YkAbp.Roles.Dto
+namespace YkAbp.Application.Roles.Dto
 {
     [AutoMapTo(typeof(Role))]
     public class CreateRoleDto

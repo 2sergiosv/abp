@@ -3,8 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Shouldly;
 using Xunit;
 using Abp.Application.Services.Dto;
-using YkAbp.Users;
-using YkAbp.Users.Dto;
+using YkAbp.Application.Users;
+using YkAbp.Application.Users.Dto;
 
 namespace YkAbp.Tests.Users
 {

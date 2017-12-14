@@ -1,10 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
-using YkAbp.Configuration;
-using YkAbp.Web;
+using YkAbp.Core;
+using YkAbp.Core.Configuration;
+using YkAbp.Core.Web;
 
-namespace YkAbp.EntityFrameworkCore
+namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore
 {
     /* This class is needed to run "dotnet ef ..." commands from command line on development. Not used anywhere else */
     public class YkAbpDbContextFactory : IDesignTimeDbContextFactory<YkAbpDbContext>

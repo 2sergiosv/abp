@@ -1,10 +1,10 @@
 using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using YkAbp.Roles.Dto;
-using YkAbp.Users.Dto;
+using YkAbp.Application.Roles.Dto;
+using YkAbp.Application.Users.Dto;
 
-namespace YkAbp.Users
+namespace YkAbp.Application.Users
 {
     public interface IUserAppService : IAsyncCrudAppService<UserDto, long, PagedResultRequestDto, CreateUserDto, UserDto>
     {

@@ -1,4 +1,4 @@
-﻿namespace YkAbp.Authorization
+﻿namespace YkAbp.Core.Authorization
 {
     public static class PermissionNames
     {

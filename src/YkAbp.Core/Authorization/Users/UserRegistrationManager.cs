@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using Abp.Authorization.Users;
 using Abp.Domain.Services;
 using Abp.IdentityFramework;
 using Abp.Runtime.Session;
 using Abp.UI;
-using YkAbp.Authorization.Roles;
-using YkAbp.MultiTenancy;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using YkAbp.Core.Authorization.Roles;
+using YkAbp.Core.MultiTenancy;
 
-namespace YkAbp.Authorization.Users
+namespace YkAbp.Core.Authorization.Users
 {
     public class UserRegistrationManager : DomainService
     {

@@ -1,4 +1,4 @@
-﻿namespace YkAbp.Configuration
+﻿namespace YkAbp.Core.Configuration
 {
     public static class AppSettingNames
     {

@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Abp.Authorization;
+﻿using Abp.Authorization;
 using Abp.Authorization.Users;
 using Abp.Configuration;
 using Abp.Configuration.Startup;
@@ -7,11 +6,12 @@ using Abp.Dependency;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using Abp.Zero.Configuration;
-using YkAbp.Authorization.Roles;
-using YkAbp.Authorization.Users;
-using YkAbp.MultiTenancy;
+using Microsoft.AspNetCore.Identity;
+using YkAbp.Core.Authorization.Roles;
+using YkAbp.Core.Authorization.Users;
+using YkAbp.Core.MultiTenancy;
 
-namespace YkAbp.Authorization
+namespace YkAbp.Core.Authorization
 {
     public class LogInManager : AbpLogInManager<Tenant, Role, User>
     {

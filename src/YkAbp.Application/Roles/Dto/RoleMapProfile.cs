@@ -1,9 +1,9 @@
-﻿using AutoMapper;
-using Abp.Authorization;
+﻿using Abp.Authorization;
 using Abp.Authorization.Roles;
-using YkAbp.Authorization.Roles;
+using AutoMapper;
+using YkAbp.Core.Authorization.Roles;
 
-namespace YkAbp.Roles.Dto
+namespace YkAbp.Application.Roles.Dto
 {
     public class RoleMapProfile : Profile
     {

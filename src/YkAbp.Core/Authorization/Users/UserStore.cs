@@ -2,9 +2,9 @@ using Abp.Authorization.Users;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using Abp.Linq;
-using YkAbp.Authorization.Roles;
+using YkAbp.Core.Authorization.Roles;
 
-namespace YkAbp.Authorization.Users
+namespace YkAbp.Core.Authorization.Users
 {
     public class UserStore : AbpUserStore<Role, User>
     {

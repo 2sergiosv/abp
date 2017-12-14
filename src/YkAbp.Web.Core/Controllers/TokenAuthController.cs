@@ -4,21 +4,23 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
 using Abp.Authorization;
 using Abp.Authorization.Users;
 using Abp.MultiTenancy;
 using Abp.Runtime.Security;
 using Abp.UI;
-using YkAbp.Authentication.External;
-using YkAbp.Authentication.JwtBearer;
-using YkAbp.Authorization;
-using YkAbp.Authorization.Users;
-using YkAbp.Models.TokenAuth;
-using YkAbp.MultiTenancy;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using YkAbp.Application;
+using YkAbp.Application.Authorization;
+using YkAbp.Core.Authorization;
+using YkAbp.Core.Authorization.Users;
+using YkAbp.Core.MultiTenancy;
+using YkAbp.Web.Core.Authentication.External;
+using YkAbp.Web.Core.Authentication.JwtBearer;
+using YkAbp.Web.Core.Models.TokenAuth;
 
-namespace YkAbp.Controllers
+namespace YkAbp.Web.Core.Controllers
 {
     [Route("api/[controller]/[action]")]
     public class TokenAuthController : YkAbpControllerBase
@@ -140,7 +142,7 @@ namespace YkAbp.Controllers
                 externalUser.Surname,
                 externalUser.EmailAddress,
                 externalUser.EmailAddress,
-                Authorization.Users.User.CreateRandomPassword(),
+                YkAbp.Core.Authorization.Users.User.CreateRandomPassword(),
                 true
             );
 

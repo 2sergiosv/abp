@@ -3,8 +3,9 @@ using Abp;
 using Abp.Authorization;
 using Abp.Dependency;
 using Abp.UI;
+using YkAbp.Core;
 
-namespace YkAbp.Authorization
+namespace YkAbp.Application.Authorization
 {
     public class AbpLoginResultTypeHelper : AbpServiceBase, ITransientDependency
     {

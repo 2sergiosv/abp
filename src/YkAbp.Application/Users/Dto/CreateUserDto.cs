@@ -3,9 +3,9 @@ using Abp.Auditing;
 using Abp.Authorization.Users;
 using Abp.AutoMapper;
 using Abp.Runtime.Validation;
-using YkAbp.Authorization.Users;
+using YkAbp.Core.Authorization.Users;
 
-namespace YkAbp.Users.Dto
+namespace YkAbp.Application.Users.Dto
 {
     [AutoMapTo(typeof(User))]
     public class CreateUserDto : IShouldNormalize

@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using Abp.Extensions;
+using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
-using Abp.Extensions;
 
-namespace YkAbp.Identity
+namespace YkAbp.Web.Core.Identity
 {
     public class ExternalLoginInfoHelper
     {

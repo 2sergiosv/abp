@@ -3,8 +3,10 @@ using Castle.MicroKernel.Registration;
 using Abp.Events.Bus;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
-using YkAbp.Configuration;
+using YkAbp.Core;
+using YkAbp.Core.Configuration;
 using YkAbp.EntityFrameworkCore;
+using YkAbp.EntityFrameworkCore.EntityFrameworkCore;
 using YkAbp.Migrator.DependencyInjection;
 
 namespace YkAbp.Migrator

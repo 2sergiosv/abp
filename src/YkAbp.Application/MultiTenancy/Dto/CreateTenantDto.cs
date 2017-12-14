@@ -2,8 +2,9 @@ using System.ComponentModel.DataAnnotations;
 using Abp.Authorization.Users;
 using Abp.AutoMapper;
 using Abp.MultiTenancy;
+using YkAbp.Core.MultiTenancy;
 
-namespace YkAbp.MultiTenancy.Dto
+namespace YkAbp.Application.MultiTenancy.Dto
 {
     [AutoMapTo(typeof(Tenant))]
     public class CreateTenantDto

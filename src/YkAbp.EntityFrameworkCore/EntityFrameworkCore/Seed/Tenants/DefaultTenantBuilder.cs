@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using YkAbp.Editions;
-using YkAbp.MultiTenancy;
+using YkAbp.Core.Editions;
+using YkAbp.Core.MultiTenancy;
 
-namespace YkAbp.EntityFrameworkCore.Seed.Tenants
+namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed.Tenants
 {
     public class DefaultTenantBuilder
     {

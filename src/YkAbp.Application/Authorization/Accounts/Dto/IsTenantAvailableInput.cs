@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Abp.MultiTenancy;
 
-namespace YkAbp.Authorization.Accounts.Dto
+namespace YkAbp.Application.Authorization.Accounts.Dto
 {
     public class IsTenantAvailableInput
     {

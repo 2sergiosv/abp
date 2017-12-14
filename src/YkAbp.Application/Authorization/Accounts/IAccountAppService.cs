@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
-using YkAbp.Authorization.Accounts.Dto;
+using YkAbp.Application.Authorization.Accounts.Dto;
 
-namespace YkAbp.Authorization.Accounts
+namespace YkAbp.Application.Authorization.Accounts
 {
     public interface IAccountAppService : IApplicationService
     {

@@ -1,8 +1,8 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
-using YkAbp.MultiTenancy;
+using YkAbp.Core.MultiTenancy;
 
-namespace YkAbp.Sessions.Dto
+namespace YkAbp.Application.Sessions.Dto
 {
     [AutoMapFrom(typeof(Tenant))]
     public class TenantLoginInfoDto : EntityDto

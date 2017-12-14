@@ -1,22 +1,24 @@
 ﻿using System;
 using System.Text;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
 using Abp.AspNetCore;
 using Abp.AspNetCore.Configuration;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
 using Abp.Zero.Configuration;
-using YkAbp.Authentication.JwtBearer;
-using YkAbp.Configuration;
-using YkAbp.EntityFrameworkCore;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using YkAbp.Application;
+using YkAbp.Core;
+using YkAbp.EntityFrameworkCore.EntityFrameworkCore;
+using YkAbp.Web.Core.Authentication.JwtBearer;
+using YkAbp.Web.Core.Configuration;
 
 #if FEATURE_SIGNALR
 using Abp.Web.SignalR;
 #endif
 
-namespace YkAbp
+namespace YkAbp.Web.Core
 {
     [DependsOn(
          typeof(YkAbpApplicationModule),

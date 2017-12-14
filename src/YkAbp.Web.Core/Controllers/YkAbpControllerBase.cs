@@ -1,8 +1,9 @@
 using Abp.AspNetCore.Mvc.Controllers;
 using Abp.IdentityFramework;
 using Microsoft.AspNetCore.Identity;
+using YkAbp.Core;
 
-namespace YkAbp.Controllers
+namespace YkAbp.Web.Core.Controllers
 {
     public abstract class YkAbpControllerBase: AbpController
     {

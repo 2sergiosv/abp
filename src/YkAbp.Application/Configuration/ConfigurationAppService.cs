@@ -1,9 +1,10 @@
 ﻿using System.Threading.Tasks;
 using Abp.Authorization;
 using Abp.Runtime.Session;
-using YkAbp.Configuration.Dto;
+using YkAbp.Application.Configuration.Dto;
+using YkAbp.Core.Configuration;
 
-namespace YkAbp.Configuration
+namespace YkAbp.Application.Configuration
 {
     [AbpAuthorize]
     public class ConfigurationAppService : YkAbpAppServiceBase, IConfigurationAppService
