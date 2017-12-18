@@ -26,8 +26,8 @@ namespace YkAbp.Core.Configuration
         private static IConfigurationRoot BuildConfiguration(string path, string environmentName = null, bool addUserSecrets = false)
         {
             var builder = new ConfigurationBuilder()
-                .SetBasePath(path)
-                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+                .SetBasePath(System.IO.Path.Combine(path, "config"))
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
             if (!environmentName.IsNullOrWhiteSpace())
             {

@@ -4,6 +4,7 @@ using Abp;
 using Abp.Extensions;
 using Abp.Notifications;
 using Abp.Timing;
+using Microsoft.Extensions.Logging;
 using YkAbp.Web.Core.Controllers;
 
 namespace YkAbp.Web.Host.Controllers
@@ -46,6 +47,12 @@ namespace YkAbp.Web.Host.Controllers
                  );
 
             return Content("Sent notification: " + message);
+        }
+
+        public string Test()
+        {
+            Logger.Debug("ok");
+            return "ok";
         }
     }
 }

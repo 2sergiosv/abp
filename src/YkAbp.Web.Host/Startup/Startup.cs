@@ -1,19 +1,22 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Cors.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Castle.Facilities.Logging;
-using Swashbuckle.AspNetCore.Swagger;
 using Abp.AspNetCore;
-using Abp.Castle.Logging.Log4Net;
+using Abp.Castle.NLogLogging;
 using Abp.Extensions;
+using Castle.Core.Logging;
+using Castle.Facilities.Logging;
+using YkAbp.Core.Configuration;
 using YkAbp.Core.Identity;
 using YkAbp.Web.Core.Authentication.JwtBearer;
-using YkAbp.Web.Core.Configuration;
+#if DEBUG
+using Swashbuckle.AspNetCore.Swagger;
+#endif
 
 #if FEATURE_SIGNALR
 using Microsoft.AspNet.SignalR;
@@ -31,8 +34,11 @@ namespace YkAbp.Web.Host.Startup
 
         private readonly IConfigurationRoot _appConfiguration;
 
+        private readonly IHostingEnvironment _environment;
+
         public Startup(IHostingEnvironment env)
         {
+            _environment = env;
             _appConfiguration = env.GetAppConfiguration();
         }
 
@@ -61,7 +67,8 @@ namespace YkAbp.Web.Host.Startup
                         .AllowAnyMethod();
                 });
             });
-
+          
+#if DEBUG
             // Swagger - Enable this line and the related lines in Configure method to enable swagger UI
             services.AddSwaggerGen(options =>
             {
@@ -79,14 +86,14 @@ namespace YkAbp.Web.Host.Startup
                 // Assign scope requirements to operations based on AuthorizeAttribute
                 options.OperationFilter<SecurityRequirementsOperationFilter>();
             });
+#endif
 
             // Configure Abp and Dependency Injection
             return services.AddAbp<YkAbpWebHostModule>(options =>
             {
-                // Configure Log4Net logging
                 options.IocManager.IocContainer.AddFacility<LoggingFacility>(
-                    f => f.UseAbpLog4Net().WithConfig("log4net.config")
-                );
+                    f => f.UseAbpNLog().WithConfig(Path.Combine("config", $"nlog.{_environment.EnvironmentName}.config")));
+
             });
         }
 
@@ -120,6 +127,7 @@ namespace YkAbp.Web.Host.Startup
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
+#if DEBUG
             // Enable middleware to serve generated Swagger as a JSON endpoint
             app.UseSwagger();
             // Enable middleware to serve swagger-ui assets (HTML, JS, CSS etc.)
@@ -129,6 +137,7 @@ namespace YkAbp.Web.Host.Startup
                 options.InjectOnCompleteJavaScript("/swagger/ui/on-complete.js");
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "YkAbp API V1");
             }); // URL: /swagger
+#endif
         }
 
 #if FEATURE_SIGNALR

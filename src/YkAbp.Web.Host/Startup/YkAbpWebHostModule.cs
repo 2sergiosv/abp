@@ -2,8 +2,8 @@
 using Microsoft.Extensions.Configuration;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
+using YkAbp.Core.Configuration;
 using YkAbp.Web.Core;
-using YkAbp.Web.Core.Configuration;
 
 namespace YkAbp.Web.Host.Startup
 {
@@ -18,6 +18,11 @@ namespace YkAbp.Web.Host.Startup
         {
             _env = env;
             _appConfiguration = env.GetAppConfiguration();
+        }
+
+        public override void PreInitialize()
+        {
+
         }
 
         public override void Initialize()
