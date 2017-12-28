@@ -32,7 +32,6 @@ namespace Abp.Castle.NLogLogging.Internal
             return Logger.ToString();
         }
 
-
         public virtual global::Castle.Core.Logging.ILogger CreateChildLogger(string name)
         {
             return new CastleNLogLogger(Logger.Factory.GetLogger(Logger.Name + "." + name));

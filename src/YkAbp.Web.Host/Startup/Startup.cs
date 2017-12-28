@@ -99,7 +99,10 @@ namespace YkAbp.Web.Host.Startup
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            app.UseAbp(options => { options.UseAbpRequestLocalization = false; }); // Initializes ABP framework.
+            app.UseAbp(options =>
+            {
+                options.UseAbpRequestLocalization = false; //disable automatic adding of request localization
+            }); // Initializes ABP framework.
 
             app.UseCors(_defaultCorsPolicyName); // Enable CORS!
 
@@ -109,7 +112,7 @@ namespace YkAbp.Web.Host.Startup
 
             app.UseJwtTokenMiddleware();
 
-            app.UseAbpRequestLocalization();
+            app.UseAbpRequestLocalization(); // after authentication middleware
 
 #if FEATURE_SIGNALR
             // Integrate to OWIN

@@ -229,7 +229,7 @@ namespace YkAbp.Web.Core.Controllers
 
         private string GetEncrpyedAccessToken(string accessToken)
         {
-            return SimpleStringCipher.Instance.Encrypt(accessToken, AppConsts.DefaultPassPhrase);
+            return SimpleStringCipher.Instance.Encrypt(accessToken, YkAbp.Core.YkAbpConsts.DefaultPassPhrase);
         }
     }
 }
