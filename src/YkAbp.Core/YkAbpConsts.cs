@@ -2,7 +2,7 @@
 {
     public class YkAbpConsts
     {
-        public const string LocalizationSourceName = "YkAbp";
+        public const string LocalizationSourceName = "yk";
 
         public const string ConnectionStringName = "Default";
 

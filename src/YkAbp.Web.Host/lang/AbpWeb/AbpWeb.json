@@ -1,0 +1,20 @@
+﻿{
+  "culture": "zh-CN",
+  "texts": {
+    "AreYouSure": "你确定吗?",
+    "Cancel": "取消",
+    "DefaultError": "发生未知错误！",
+    "DefaultError401": "You are not authenticated!",
+    "DefaultError403": "You are not authorized!",
+    "DefaultError404": "Resource not found!",
+    "DefaultErrorDetail": "Error detail not sent by server.",
+    "DefaultErrorDetail401": "You should be authenticated (sign in) in order to perform this operation.",
+    "DefaultErrorDetail403": "You are not allowed to perform this operation.",
+    "DefaultErrorDetail404": "The resource requested could not found on the server.",
+    "EntityNotFound": "There is no entity {0} with id = {1}!",
+    "InternalServerError": "对不起,在处理您的请求期间,产生了一个服务器内部错误!",
+    "ValidationError": "您的请求无效!",
+    "ValidationNarrativeTitle": "The following errors were detected during validation.",
+    "Yes": "确定"
+  }
+}

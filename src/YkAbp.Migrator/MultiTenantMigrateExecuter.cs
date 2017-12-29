@@ -9,8 +9,7 @@ using Abp.MultiTenancy;
 using Abp.Runtime.Security;
 using YkAbp.Core.MultiTenancy;
 using YkAbp.EntityFrameworkCore;
-using YkAbp.EntityFrameworkCore.EntityFrameworkCore;
-using YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed;
+using YkAbp.EntityFrameworkCore.Seed;
 
 namespace YkAbp.Migrator
 {

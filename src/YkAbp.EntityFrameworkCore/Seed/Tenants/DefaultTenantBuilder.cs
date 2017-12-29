@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using YkAbp.Core.Editions;
 using YkAbp.Core.MultiTenancy;
 
-namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed.Tenants
+namespace YkAbp.EntityFrameworkCore.Seed.Tenants
 {
     public class DefaultTenantBuilder
     {

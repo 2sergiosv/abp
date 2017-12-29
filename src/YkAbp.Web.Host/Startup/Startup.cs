@@ -11,7 +11,6 @@ using Abp.Castle.NLogLogging;
 using Abp.Extensions;
 using Castle.Core.Logging;
 using Castle.Facilities.Logging;
-using Microsoft.Extensions.PlatformAbstractions;
 using YkAbp.Core.Configuration;
 using YkAbp.Core.Identity;
 using YkAbp.Web.Core.Authentication.JwtBearer;
@@ -88,7 +87,7 @@ namespace YkAbp.Web.Host.Startup
                 options.OperationFilter<SecurityRequirementsOperationFilter>();
                 
                 // Set the comments path for the Swagger JSON and UI.
-                var basePath = PlatformServices.Default.Application.ApplicationBasePath;
+                var basePath = AppDomain.CurrentDomain.BaseDirectory;
                 var xmlForApi = Path.Combine(basePath, "YkAbp.Web.Core.xml");
                 options.IncludeXmlComments(xmlForApi);
             });

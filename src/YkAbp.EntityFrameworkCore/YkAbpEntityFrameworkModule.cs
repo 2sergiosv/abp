@@ -3,9 +3,9 @@ using Abp.Modules;
 using Abp.Reflection.Extensions;
 using Abp.Zero.EntityFrameworkCore;
 using YkAbp.Core;
-using YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed;
+using YkAbp.EntityFrameworkCore.Seed;
 
-namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore
+namespace YkAbp.EntityFrameworkCore
 {
     [DependsOn(
         typeof(YkAbpCoreModule), 

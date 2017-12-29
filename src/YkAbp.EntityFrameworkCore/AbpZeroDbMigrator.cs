@@ -3,7 +3,7 @@ using Abp.EntityFrameworkCore;
 using Abp.MultiTenancy;
 using Abp.Zero.EntityFrameworkCore;
 
-namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore
+namespace YkAbp.EntityFrameworkCore
 {
     public class AbpZeroDbMigrator : AbpZeroDbMigrator<YkAbpDbContext>
     {

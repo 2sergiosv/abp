@@ -6,7 +6,6 @@ using Castle.Windsor.MsDependencyInjection;
 using Abp.Dependency;
 using YkAbp.Core.Identity;
 using YkAbp.EntityFrameworkCore;
-using YkAbp.EntityFrameworkCore.EntityFrameworkCore;
 
 namespace YkAbp.Tests.DependencyInjection
 {

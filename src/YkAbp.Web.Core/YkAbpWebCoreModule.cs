@@ -14,7 +14,7 @@ using Microsoft.IdentityModel.Tokens;
 using YkAbp.Application;
 using YkAbp.Core;
 using YkAbp.Core.Configuration;
-using YkAbp.EntityFrameworkCore.EntityFrameworkCore;
+using YkAbp.EntityFrameworkCore;
 using YkAbp.Web.Core.Authentication.JwtBearer;
 using YkAbp.Web.Core.Configuration;
 

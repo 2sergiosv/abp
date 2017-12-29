@@ -10,7 +10,7 @@ using YkAbp.Core.Authorization;
 using YkAbp.Core.Authorization.Roles;
 using YkAbp.Core.Authorization.Users;
 
-namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed.Tenants
+namespace YkAbp.EntityFrameworkCore.Seed.Tenants
 {
     public class TenantRoleAndUserBuilder
     {

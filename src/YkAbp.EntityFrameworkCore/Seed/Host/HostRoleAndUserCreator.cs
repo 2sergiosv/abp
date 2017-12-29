@@ -8,9 +8,9 @@ using YkAbp.Core.Authorization;
 using YkAbp.Core.Authorization.Roles;
 using YkAbp.Core.Authorization.Users;
 
-namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed.Host
+namespace YkAbp.EntityFrameworkCore.Seed.Host
 {
-    public class HostRoleAndUserCreator
+    internal class HostRoleAndUserCreator
     {
         private readonly YkAbpDbContext _context;
 

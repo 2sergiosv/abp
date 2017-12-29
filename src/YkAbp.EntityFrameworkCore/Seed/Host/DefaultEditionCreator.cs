@@ -4,9 +4,9 @@ using Abp.Application.Features;
 using Microsoft.EntityFrameworkCore;
 using YkAbp.Core.Editions;
 
-namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed.Host
+namespace YkAbp.EntityFrameworkCore.Seed.Host
 {
-    public class DefaultEditionCreator
+    internal class DefaultEditionCreator
     {
         private readonly YkAbpDbContext _context;
 

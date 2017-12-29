@@ -11,7 +11,6 @@ using Abp.Zero.Configuration;
 using Abp.Zero.EntityFrameworkCore;
 using YkAbp.Application;
 using YkAbp.EntityFrameworkCore;
-using YkAbp.EntityFrameworkCore.EntityFrameworkCore;
 using YkAbp.Tests.DependencyInjection;
 
 namespace YkAbp.Tests

@@ -11,9 +11,8 @@ using Abp.TestBase;
 using YkAbp.Core.Authorization.Users;
 using YkAbp.Core.MultiTenancy;
 using YkAbp.EntityFrameworkCore;
-using YkAbp.EntityFrameworkCore.EntityFrameworkCore;
-using YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed.Host;
-using YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed.Tenants;
+using YkAbp.EntityFrameworkCore.Seed.Host;
+using YkAbp.EntityFrameworkCore.Seed.Tenants;
 
 namespace YkAbp.Tests
 {

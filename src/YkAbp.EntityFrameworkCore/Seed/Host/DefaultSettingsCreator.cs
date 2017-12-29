@@ -4,9 +4,9 @@ using Abp.Localization;
 using Abp.Net.Mail;
 using Microsoft.EntityFrameworkCore;
 
-namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed.Host
+namespace YkAbp.EntityFrameworkCore.Seed.Host
 {
-    public class DefaultSettingsCreator
+    internal class DefaultSettingsCreator
     {
         private readonly YkAbpDbContext _context;
 
@@ -22,7 +22,7 @@ namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore.Seed.Host
             AddSettingIfNotExists(EmailSettingNames.DefaultFromDisplayName, "mydomain.com mailer");
 
             // Languages
-            AddSettingIfNotExists(LocalizationSettingNames.DefaultLanguage, "en");
+            AddSettingIfNotExists(LocalizationSettingNames.DefaultLanguage, "zh-CN");
         }
 
         private void AddSettingIfNotExists(string name, string value, int? tenantId = null)

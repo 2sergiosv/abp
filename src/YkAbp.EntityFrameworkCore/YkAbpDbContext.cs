@@ -4,7 +4,7 @@ using YkAbp.Core.Authorization.Roles;
 using YkAbp.Core.Authorization.Users;
 using YkAbp.Core.MultiTenancy;
 
-namespace YkAbp.EntityFrameworkCore.EntityFrameworkCore
+namespace YkAbp.EntityFrameworkCore
 {
     public class YkAbpDbContext : AbpZeroDbContext<Tenant, Role, User, YkAbpDbContext>
     {
