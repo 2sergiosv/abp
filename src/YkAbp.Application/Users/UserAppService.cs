@@ -18,7 +18,7 @@ using YkAbp.Core.Authorization.Users;
 
 namespace YkAbp.Application.Users
 {
-    [AbpAuthorize(PermissionNames.Pages_Administration_Users)]
+    [AbpAuthorize(PermissionNames.Administration_Users)]
     public class UserAppService : AsyncCrudAppService<User, UserDto, long, PagedResultRequestDto, CreateUserDto, UserDto>, IUserAppService
     {
         private readonly UserManager _userManager;

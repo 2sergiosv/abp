@@ -51,6 +51,11 @@ namespace YkAbp.Web.Core.Controllers
             _userRegistrationManager = userRegistrationManager;
         }
 
+        /// <summary>
+        /// 获取WebApi访问令牌（token）
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<AuthenticateResultModel> Authenticate([FromBody] AuthenticateModel model)
         {

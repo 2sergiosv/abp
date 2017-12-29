@@ -11,6 +11,7 @@ using Abp.Castle.NLogLogging;
 using Abp.Extensions;
 using Castle.Core.Logging;
 using Castle.Facilities.Logging;
+using Microsoft.Extensions.PlatformAbstractions;
 using YkAbp.Core.Configuration;
 using YkAbp.Core.Identity;
 using YkAbp.Web.Core.Authentication.JwtBearer;
@@ -85,6 +86,11 @@ namespace YkAbp.Web.Host.Startup
                 });
                 // Assign scope requirements to operations based on AuthorizeAttribute
                 options.OperationFilter<SecurityRequirementsOperationFilter>();
+                
+                // Set the comments path for the Swagger JSON and UI.
+                var basePath = PlatformServices.Default.Application.ApplicationBasePath;
+                var xmlForApi = Path.Combine(basePath, "YkAbp.Web.Core.xml");
+                options.IncludeXmlComments(xmlForApi);
             });
 #endif
 
@@ -139,6 +145,7 @@ namespace YkAbp.Web.Host.Startup
                 options.InjectOnCompleteJavaScript("/swagger/ui/abp.js");
                 options.InjectOnCompleteJavaScript("/swagger/ui/on-complete.js");
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "YkAbp API V1");
+                options.DocumentTitle("YkAbp Api");
             }); // URL: /swagger
 #endif
         }
