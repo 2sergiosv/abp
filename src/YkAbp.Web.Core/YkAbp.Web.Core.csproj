@@ -29,14 +29,14 @@
     <ProjectReference Include="..\YkAbp.EntityFrameworkCore\YkAbp.EntityFrameworkCore.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Abp.HangFire.AspNetCore" Version="3.2.5" />
-    <PackageReference Include="Abp.RedisCache" Version="3.2.5" />
+    <PackageReference Include="Abp.HangFire.AspNetCore" Version="3.3.0" />
+    <PackageReference Include="Abp.RedisCache" Version="3.3.0" />
     <PackageReference Include="System.ValueTuple" Version="4.4.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Owin" Version="2.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="1.1.0" />
-    <PackageReference Include="Abp.AspNetCore" Version="3.2.5" />
-    <PackageReference Include="Abp.ZeroCore" Version="3.2.5" />
+    <PackageReference Include="Abp.AspNetCore" Version="3.3.0" />
+    <PackageReference Include="Abp.ZeroCore" Version="3.3.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="2.0.1" />
   </ItemGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
