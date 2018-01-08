@@ -17,4 +17,5 @@
 ### 3. 本地化
 * 使用json文件进行本地化配置，语言文件根目录为 **/lang**
 * 添加新增资源：yk
-* 完善ABP内部的2个本地化资源AbpWeb和AbpZero未的汉化部分
+* 完善ABP内部的本地化资源(Abp、AbpWeb和AbpZero)未的汉化部分
+* 支持i18n，统一配置到 ** src/YkAbp.Web.Host/lang**。i18n不支持在自定义模块中新增的语言资源。

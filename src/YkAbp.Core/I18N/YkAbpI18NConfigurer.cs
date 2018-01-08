@@ -41,13 +41,13 @@ namespace YkAbp.Core.I18N
                     GetLangFiles(Path.Combine(langRootPath, "AbpZero"))
                 }
             };
-            foreach (var lang in abpSource[YkAbpConsts.DefaultLanguae])
+            foreach (var lang in abpSource[YkAbpConsts.DefaultLanguae].Select(x => x.Key))
             {
                 var abpLangs = abpSource.SelectMany(x => x.Value)
-                    .Where(x => x.Key == lang.Key)
+                    .Where(x => x.Key == lang)
                     .Select(x => x.Value)
                     .ToList();
-                JsonHelper.MergeJsonFile("texts", Path.Combine(i18NRootPath, $"{lang.Key}.json"), abpLangs);
+                JsonHelper.MergeJsonFile("texts", Path.Combine(i18NRootPath, $"{lang}.json"), abpLangs);
             }
 
         }
@@ -58,7 +58,7 @@ namespace YkAbp.Core.I18N
             {
                 var separatorCharIndex = x.LastIndexOf(Path.DirectorySeparatorChar) + 1;
                 var fileName = x.Substring(separatorCharIndex, x.Length - 5 - separatorCharIndex);
-                var fileWithLang = fileName.Split(new[] {'-'}, StringSplitOptions.RemoveEmptyEntries);
+                var fileWithLang = fileName.Split(new[] { '-' }, StringSplitOptions.RemoveEmptyEntries);
                 var lang = fileWithLang.Length > 1 ? fileWithLang.Last() : YkAbpConsts.DefaultLanguae;
                 return new KeyValuePair<string, string>(lang, x);
             });
