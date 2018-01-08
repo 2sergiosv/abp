@@ -9,7 +9,8 @@ namespace YkAbp.Application
 {
     [DependsOn(
         typeof(YkAbpCoreModule), 
-        typeof(AbpAutoMapperModule))]
+        typeof(AbpAutoMapperModule)
+        )]
     public class YkAbpApplicationModule : AbpModule
     {
         public override void PreInitialize()

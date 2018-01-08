@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Reflection;
+﻿using System.IO;
 using Abp.Configuration.Startup;
 using Abp.Localization.Dictionaries;
 using Abp.Localization.Dictionaries.Json;
@@ -8,15 +6,15 @@ using Abp.Localization.Sources;
 
 namespace YkAbp.Core.Localization
 {
-    public static class YkAbpLocalizationConfigurer
+    internal static class YkAbpLocalizationConfigurer
     {
-        public static void Configure(ILocalizationConfiguration localizationConfiguration)
+        internal static void Configure(ILocalizationConfiguration localizationConfiguration, string contentRoot)
         {
             localizationConfiguration.Sources.Add(
                 new DictionaryBasedLocalizationSource(
                     YkAbpConsts.LocalizationSourceName,
                     new JsonFileLocalizationDictionaryProvider(
-                       Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "lang")
+                       Path.Combine(contentRoot, "lang")
                     )
                 )
             );
@@ -24,9 +22,18 @@ namespace YkAbp.Core.Localization
             // 对ABP默认语言进行扩展
             localizationConfiguration.Sources.Extensions.Add(
                 new LocalizationSourceExtensionInfo(
+                    "Abp",
+                    new JsonFileLocalizationDictionaryProvider(
+                        Path.Combine(contentRoot, "lang", "Abp")
+                    )
+                )
+            );
+
+            localizationConfiguration.Sources.Extensions.Add(
+                new LocalizationSourceExtensionInfo(
                     "AbpWeb",
                     new JsonFileLocalizationDictionaryProvider(
-                        Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "lang", "AbpWeb")
+                        Path.Combine(contentRoot, "lang", "AbpWeb")
                     )
                 )
             );
@@ -35,7 +42,7 @@ namespace YkAbp.Core.Localization
                 new LocalizationSourceExtensionInfo(
                     "AbpZero",
                     new JsonFileLocalizationDictionaryProvider(
-                        Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "lang", "AbpZero")
+                        Path.Combine(contentRoot, "lang", "AbpZero")
                     )
                 )
             );

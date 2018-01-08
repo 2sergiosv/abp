@@ -8,6 +8,8 @@
 
         public const bool MultiTenancyEnabled = true;
 
+        public const string DefaultLanguae = "zh-CN";
+
 
         /// <summary>
         /// Default pass phrase for SimpleStringCipher decrypt/encrypt operations

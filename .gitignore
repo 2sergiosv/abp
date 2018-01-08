@@ -250,3 +250,4 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+src/YkAbp.Web.Host/wwwroot/i18n
