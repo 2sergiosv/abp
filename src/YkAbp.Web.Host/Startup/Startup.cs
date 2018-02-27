@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Cors.Internal;
@@ -141,10 +142,9 @@ namespace YkAbp.Web.Host.Startup
             // Enable middleware to serve swagger-ui assets (HTML, JS, CSS etc.)
             app.UseSwaggerUI(options =>
             {
-                options.InjectOnCompleteJavaScript("/swagger/ui/abp.js");
-                options.InjectOnCompleteJavaScript("/swagger/ui/on-complete.js");
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "YkAbp API V1");
-                options.DocumentTitle("YkAbp Api");
+                options.DocumentTitle="YkAbp Api";
+                options.IndexStream = () => File.OpenRead(Path.Combine(_environment.ContentRootPath, "wwwroot", "swagger", "index.html"));
             }); // URL: /swagger
 #endif
         }
