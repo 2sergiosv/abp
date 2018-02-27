@@ -84,6 +84,9 @@
     "EditUser": "Edit user",
     "TenantIdIsNotActive{0}": "TenantId {0} is not active",
     "UnknownTenantId{0}": "Unknown tenantId {0}",
+    "Administration": "系统管理",
+    "Dashboard": "仪表盘",
+    "Editions": "版本",
 
     "home": "主页",
     "settings": "设置",

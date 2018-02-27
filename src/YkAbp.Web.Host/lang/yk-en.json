@@ -84,6 +84,9 @@
     "EditUser": "Edit user",
     "TenantIdIsNotActive{0}": "TenantId {0} is not active",
     "UnknownTenantId{0}": "Unknown tenantId {0}",
+    "Administration": "Administration",
+    "Dashboard": "Dashboard",
+    "Editions": "Editions",
 
     "home": "Home",
     "settings": "Settings",
