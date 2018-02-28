@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Abp.AspNetCore;
 using Abp.Castle.NLogLogging;
 using Abp.Extensions;
+using Abp.PlugIns;
 using Castle.Core.Logging;
 using Castle.Facilities.Logging;
 using YkAbp.Core.Configuration;
@@ -100,6 +101,7 @@ namespace YkAbp.Web.Host.Startup
                 options.IocManager.IocContainer.AddFacility<LoggingFacility>(
                     f => f.UseAbpNLog().WithConfig(Path.Combine("config", $"nlog.{_environment.EnvironmentName}.config")));
 
+                options.PlugInSources.AddFolder(Path.Combine(_environment.ContentRootPath, "Plugins"));
             });
         }
 

@@ -26,6 +26,10 @@ namespace YkAbp.Core
 
         public override void PreInitialize()
         {
+            // Eable entity history storing
+            Configuration.EntityHistory.IsEnabled = true;
+
+            // Allow anonymous uesrs
             Configuration.Auditing.IsEnabledForAnonymousUsers = true;
 
             // Declare entity types
