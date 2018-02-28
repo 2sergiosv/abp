@@ -1,6 +1,4 @@
-﻿using System.Threading.Tasks;
-using Abp.Application.Services;
-using Abp.Application.Services.Dto;
+﻿using Abp.Application.Services;
 using Abp.Authorization;
 using Abp.Domain.Repositories;
 using ProductDemoPlugin.Product.Dto;
