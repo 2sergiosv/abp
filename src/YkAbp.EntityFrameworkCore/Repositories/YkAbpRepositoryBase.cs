@@ -1,4 +1,5 @@
 ﻿using Abp.Domain.Entities;
+using Abp.Domain.Repositories;
 using Abp.EntityFrameworkCore;
 using Abp.EntityFrameworkCore.Repositories;
 
@@ -9,15 +10,15 @@ namespace YkAbp.EntityFrameworkCore.Repositories
     /// </summary>
     /// <typeparam name="TEntity">Entity type</typeparam>
     /// <typeparam name="TPrimaryKey">Primary key type of the entity</typeparam>
-    public abstract class YkAbpRepositoryBase<TEntity, TPrimaryKey> : EfCoreRepositoryBase<YkAbpDbContext, TEntity, TPrimaryKey>
+    public class YkAbpRepositoryBase<TEntity, TPrimaryKey> : EfCoreRepositoryBase<YkAbpDbContext, TEntity, TPrimaryKey>
         where TEntity : class, IEntity<TPrimaryKey>
     {
-        protected YkAbpRepositoryBase(IDbContextProvider<YkAbpDbContext> dbContextProvider)
+        public YkAbpRepositoryBase(IDbContextProvider<YkAbpDbContext> dbContextProvider)
             : base(dbContextProvider)
         {
         }
 
-        // Add your common methods for all repositories
+        //TODO:  Add your common methods for all repositories
     }
 
     /// <summary>
@@ -25,10 +26,10 @@ namespace YkAbp.EntityFrameworkCore.Repositories
     /// This is a shortcut of <see cref="YkAbpRepositoryBase{TEntity,TPrimaryKey}"/> for <see cref="int"/> primary key.
     /// </summary>
     /// <typeparam name="TEntity">Entity type</typeparam>
-    public abstract class YkAbpRepositoryBase<TEntity> : YkAbpRepositoryBase<TEntity, int>
+    public class YkAbpRepositoryBase<TEntity> : YkAbpRepositoryBase<TEntity, int>, IRepository<TEntity>
         where TEntity : class, IEntity<int>
     {
-        protected YkAbpRepositoryBase(IDbContextProvider<YkAbpDbContext> dbContextProvider)
+        public YkAbpRepositoryBase(IDbContextProvider<YkAbpDbContext> dbContextProvider)
             : base(dbContextProvider)
         {
         }
