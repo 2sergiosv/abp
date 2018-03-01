@@ -31,7 +31,7 @@ namespace YkAbp.EntityFrameworkCore
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            ApplyEntitiesFromPlugins(modelBuilder);
+            // ApplyEntitiesFromPlugins(modelBuilder);
 
             // TODO: configure the model here
 
