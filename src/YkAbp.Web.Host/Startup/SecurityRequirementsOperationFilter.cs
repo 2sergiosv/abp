@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Abp.Authorization;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
-using Abp.Authorization;
 
 namespace YkAbp.Web.Host.Startup
 {
@@ -10,20 +10,28 @@ namespace YkAbp.Web.Host.Startup
     {
         public void Apply(Operation operation, OperationFilterContext context)
         {
-            var controllerPermissions = context.ApiDescription.ControllerAttributes()
+            var actionAttrs = context.ApiDescription.ActionAttributes();
+            if (actionAttrs.OfType<AbpAllowAnonymousAttribute>().Any())
+            {
+                return;
+            }
+
+            var actionAbpAuthorizeAttrs = actionAttrs.OfType<AbpAuthorizeAttribute>();
+            var controllerAbpAuthorizeAttrs = context.ApiDescription.ControllerAttributes()
                 .OfType<AbpAuthorizeAttribute>();
 
-            var actionPermissions = context.ApiDescription.ActionAttributes()
-                .OfType<AbpAuthorizeAttribute>();
-
-            if (controllerPermissions.Any() || actionPermissions.Any())
+            if (controllerAbpAuthorizeAttrs.Any() || actionAbpAuthorizeAttrs.Any())
             {
                 operation.Responses.Add("401", new Response { Description = "Unauthorized" });
-                operation.Responses.Add("403", new Response { Description = "Forbidden" });
 
-                var permissions = controllerPermissions.Union(actionPermissions)
+                var permissions = controllerAbpAuthorizeAttrs.Union(actionAbpAuthorizeAttrs)
                     .SelectMany(p => p.Permissions)
                     .Distinct();
+
+                if (permissions.Any())
+                {
+                    operation.Responses.Add("403", new Response { Description = "Forbidden" });
+                }
 
                 operation.Security = new List<IDictionary<string, IEnumerable<string>>>
                 {
