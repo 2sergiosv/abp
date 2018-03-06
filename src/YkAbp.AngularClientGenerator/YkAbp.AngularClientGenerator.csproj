@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
     <PackageReference Include="NSwag.CodeGeneration.TypeScript" Version="11.15.4" />
   </ItemGroup>
 

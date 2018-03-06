@@ -37,7 +37,7 @@ namespace YkAbp.AngularClientGenerator
                 Template = TypeScriptTemplate.Angular
             };
 
-            settings.TypeScriptGeneratorSettings.DateTimeType = TypeScriptDateTimeType.MomentJS;
+            settings.TypeScriptGeneratorSettings.DateTimeType = TypeScriptDateTimeType.Date;
             settings.TypeScriptGeneratorSettings.GenerateCloneMethod = true;
             settings.TypeScriptGeneratorSettings.ExtendedClasses = null;
             settings.CodeGeneratorSettings.TemplateDirectory = "Template";

@@ -5,17 +5,17 @@ const content_ = new FormData();
 if ({{ parameter.VariableName }} !== null && {{ parameter.VariableName }} !== undefined)
 {%         else -%}
 if ({{ parameter.VariableName }} === null || {{ parameter.VariableName }} === undefined)
-    throw new Error("The parameter '{{ parameter.VariableName }}' cannot be null.");
+    throw new Error('The parameter "{{ parameter.VariableName }}" cannot be null.');
 else
 {%         endif -%}
 {%         if parameter.IsFile -%}
 {%             if parameter.IsArray -%}
-    {{ parameter.VariableName }}.forEach(item_ => content_.append("{{ parameter.Name }}", item_.data, item_.fileName ? item_.fileName : "{{ parameter.Name }}") );
+    {{ parameter.VariableName }}.forEach(item_ => content_.append('{{ parameter.Name }}', item_.data, item_.fileName ? item_.fileName : '{{ parameter.Name }}') );
 {%             else -%}
-    content_.append("{{ parameter.Name }}", {{ parameter.VariableName }}.data, {{ parameter.VariableName }}.fileName ? {{ parameter.VariableName }}.fileName : "{{ parameter.Name }}");
+    content_.append('{{ parameter.Name }}', {{ parameter.VariableName }}.data, {{ parameter.VariableName }}.fileName ? {{ parameter.VariableName }}.fileName : '{{ parameter.Name }}');
 {%             endif -%}
 {%         else -%}
-    content_.append("{{ parameter.Name }}", {{ parameter.VariableName }}.toString());
+    content_.append('{{ parameter.Name }}', {{ parameter.VariableName }}.toString());
 {%         endif -%}
 {%     endfor -%}
 {% else -%}
