@@ -1,6 +1,7 @@
 ﻿{
   "culture": "zh-CN",
   "texts": {
+    "AdminPanel": "管理平台",
     "HomePage": "Home page",
     "About": "About",
     "WellcomeMessage": "Welcome to YkAbp!",

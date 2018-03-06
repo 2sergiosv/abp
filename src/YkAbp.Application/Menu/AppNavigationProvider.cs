@@ -7,11 +7,11 @@ namespace YkAbp.Application.Menu
 {
     internal class AppNavigationProvider: NavigationProvider
     {
-        public const string MenuName = "App";
+        public const string MenuName = "AdminPanel";
 
         public override void SetNavigation(INavigationProviderContext context)
         {
-            var menu = context.Manager.Menus[MenuName] = new MenuDefinition(MenuName, new FixedLocalizableString("Main Menu"));
+            var menu = context.Manager.Menus[MenuName] = new MenuDefinition(MenuName, new FixedLocalizableString("AdminPanel"));
 
             menu
                 .AddItem(new MenuItemDefinition(

@@ -10,15 +10,13 @@ export interface I{{ Class }} {
 @Injectable()
 export class {{ Class }} {% if HasBaseClass %}extends {{ BaseClass }} {% endif %}{% if GenerateClientInterfaces %}implements I{{ Class }} {% endif %}{
     private http: {{ AngularHttpClass }};
-	private authOptions: AuthOptions;
 
 {% if HasExtendedConstructor == false -%}
-    constructor({% if HasConfigurationClass %}@Inject({{ ConfigurationClass }}) configuration: {{ ConfigurationClass }}, {% endif %}@Inject({{ AngularHttpClass }}) http: {{ AngularHttpClass }}, @Optional() @Inject(DA_OPTIONS_TOKEN) authOptions?: AuthOptions) {
+    constructor({% if HasConfigurationClass %}@Inject({{ ConfigurationClass }}) configuration: {{ ConfigurationClass }}, {% endif %}@Inject({{ AngularHttpClass }}) http: {{ AngularHttpClass }}, @Optional() @Inject(DA_OPTIONS_TOKEN) private authOptions?: AuthOptions) {
 {%     if HasBaseClass -%}
         super({% if HasConfigurationClass %}configuration{% endif %});
 {%     endif -%}
         this.http = http;
-		this.authOptions = authOptions;
     }
 {% endif -%}
 {% if HasExtensionCode -%}

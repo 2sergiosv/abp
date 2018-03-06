@@ -1,6 +1,7 @@
 ﻿{
   "culture": "en",
   "texts": {
+    "AdminPanel": "Adminstration Panel",
     "HomePage": "Home page",
     "About": "About",
     "WellcomeMessage": "Welcome to YkAbp!",
