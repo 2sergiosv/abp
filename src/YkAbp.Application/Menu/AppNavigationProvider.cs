@@ -30,7 +30,8 @@ namespace YkAbp.Application.Menu
                             requiredPermissionName: PermissionNames.Administration_Host_Dashboard,
                             customData: new
                             {
-                                i18n = "Home"
+                                i18n = "Home",
+                                reuse = true
                             }
                         )
                     ).AddItem(new MenuItemDefinition(
@@ -39,7 +40,8 @@ namespace YkAbp.Application.Menu
                             customData:new
                             {
                                 shortcut_root = true,
-                                i18n = "shortcut"
+                                i18n = "shortcut",
+                                reuse = true
                             }
                         )
                     ).AddItem(new MenuItemDefinition(
@@ -50,7 +52,8 @@ namespace YkAbp.Application.Menu
                             requiredPermissionName: PermissionNames.Tenants,
                             customData: new
                             {
-                                i18n = "Tenants"
+                                i18n = "Tenants",
+                                reuse = true
                             }
                         )
                     ).AddItem(new MenuItemDefinition(
@@ -61,7 +64,8 @@ namespace YkAbp.Application.Menu
                             requiredPermissionName: PermissionNames.Editions,
                             customData: new
                             {
-                                i18n = "Editions"
+                                i18n = "Editions",
+                                reuse = true
                             }
                         )
                     ).AddItem(new MenuItemDefinition(
@@ -72,7 +76,8 @@ namespace YkAbp.Application.Menu
                             requiredPermissionName: PermissionNames.Tenant_Dashboard,
                             customData: new
                             {
-                                i18n = "Dashboard"
+                                i18n = "Dashboard",
+                                reuse = true
                             }
                         )
                     )
@@ -94,7 +99,8 @@ namespace YkAbp.Application.Menu
                             requiredPermissionName: PermissionNames.Administration_OrganizationUnits,
                             customData: new
                             {
-                                i18n = "OrganizationUnits"
+                                i18n = "OrganizationUnits",
+                                reuse = true
                             }
                         )
                     ).AddItem(new MenuItemDefinition(
@@ -105,7 +111,8 @@ namespace YkAbp.Application.Menu
                             requiredPermissionName: PermissionNames.Administration_Roles,
                             customData: new
                             {
-                                i18n = "Roles"
+                                i18n = "Roles",
+                                reuse = true
                             }
                         )
                     ).AddItem(new MenuItemDefinition(
@@ -117,7 +124,8 @@ namespace YkAbp.Application.Menu
                             customData: new
                             {
                                 i18n = "Users",
-                                shortcut = true
+                                shortcut = true,
+                                reuse = true
                             }
                         )
                     ).AddItem(new MenuItemDefinition(
@@ -128,7 +136,8 @@ namespace YkAbp.Application.Menu
                             requiredPermissionName: PermissionNames.Administration_Languages,
                             customData: new
                             {
-                                i18n = "Languages"
+                                i18n = "Languages",
+                                reuse = true
                             }
                         )
                     ).AddItem(new MenuItemDefinition(
@@ -139,7 +148,8 @@ namespace YkAbp.Application.Menu
                             requiredPermissionName: PermissionNames.Administration_AuditLogs,
                             customData: new
                             {
-                                i18n = "AuditLogs"
+                                i18n = "AuditLogs",
+                                reuse = true
                             }
                         )
                     ).AddItem(new MenuItemDefinition(
@@ -150,7 +160,8 @@ namespace YkAbp.Application.Menu
                             requiredPermissionName: PermissionNames.Administration_Tenant_SubscriptionManagement,
                             customData: new
                             {
-                                i18n = "Subscription"
+                                i18n = "Subscription",
+                                reuse = true
                             }
                         )
                     ).AddItem(new MenuItemDefinition(
@@ -161,7 +172,8 @@ namespace YkAbp.Application.Menu
                             requiredPermissionName: PermissionNames.Administration_UiCustomization,
                             customData: new
                             {
-                                i18n = "VisualSettings"
+                                i18n = "VisualSettings",
+                                reuse = true
                             }
                         )
                     ).AddItem(new MenuItemDefinition(
@@ -172,7 +184,8 @@ namespace YkAbp.Application.Menu
                             requiredPermissionName: PermissionNames.Administration_Host_Settings,
                             customData: new
                             {
-                                i18n = "Settings"
+                                i18n = "Settings",
+                                reuse = true
                             }
                         )
                     )
@@ -184,7 +197,8 @@ namespace YkAbp.Application.Menu
                             requiredPermissionName: PermissionNames.Administration_Tenant_Settings,
                             customData: new
                             {
-                                i18n = "Settings"
+                                i18n = "Settings",
+                                reuse = true
                             }
                         )
                     )
