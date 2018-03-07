@@ -28,6 +28,7 @@
                 public const string Languages = "Administration.Languages";
                 public const string DemoUiComponents = "Administration.DemoUiComponents";
                 public const string UiCustomization = "Administration.UiCustomization";
+                public const string Workbench = "Workbench";
             }
 
             public static class Host
