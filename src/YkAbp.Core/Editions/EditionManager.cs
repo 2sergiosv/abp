@@ -1,4 +1,6 @@
-﻿using Abp.Application.Editions;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Abp.Application.Editions;
 using Abp.Application.Features;
 using Abp.Domain.Repositories;
 
@@ -9,12 +11,18 @@ namespace YkAbp.Core.Editions
         public const string DefaultEditionName = "Standard";
 
         public EditionManager(
-            IRepository<Edition> editionRepository, 
+            IRepository<Edition> editionRepository,
             IAbpZeroFeatureValueStore featureValueStore)
             : base(
                 editionRepository,
-                featureValueStore)
+                featureValueStore
+            )
         {
+        }
+
+        public async Task<List<Edition>> GetAllAsync()
+        {
+            return await EditionRepository.GetAllListAsync();
         }
     }
 }

@@ -22,8 +22,8 @@ namespace YkAbp.Core.Identity
             ILogger<SignInManager<User>> logger,
             IUnitOfWorkManager unitOfWorkManager,
             ISettingManager settingManager,
-            IAuthenticationSchemeProvider schemes) 
-            : base(
+            IAuthenticationSchemeProvider schemes
+            ) : base(
                 userManager, 
                 contextAccessor, 
                 claimsFactory, 

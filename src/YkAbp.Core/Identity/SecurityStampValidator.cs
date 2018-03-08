@@ -14,10 +14,7 @@ namespace YkAbp.Core.Identity
             IOptions<SecurityStampValidatorOptions> options, 
             SignInManager signInManager,
             ISystemClock systemClock) 
-            : base(
-                  options, 
-                  signInManager, 
-                  systemClock)
+            : base(options, signInManager, systemClock)
         {
         }
     }

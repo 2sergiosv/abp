@@ -21,10 +21,10 @@ namespace YkAbp.EntityFrameworkCore.Seed
         {
             context.SuppressAutoSetTenantId = true;
 
-            // Host seed
+            //Host seed
             new InitialHostDbBuilder(context).Create();
 
-            // Default tenant seed (in host database).
+            //Default tenant seed (in host database).
             new DefaultTenantBuilder(context).Create();
             new TenantRoleAndUserBuilder(context, 1).Create();
         }

@@ -2,10 +2,11 @@
 using System.Linq;
 using Abp.Localization;
 using Microsoft.EntityFrameworkCore;
+using YkAbp.Core;
 
 namespace YkAbp.EntityFrameworkCore.Seed.Host
 {
-    internal class DefaultLanguagesCreator
+    public class DefaultLanguagesCreator
     {
         public static List<ApplicationLanguage> InitialLanguages => GetInitialLanguages();
 
@@ -13,10 +14,11 @@ namespace YkAbp.EntityFrameworkCore.Seed.Host
 
         private static List<ApplicationLanguage> GetInitialLanguages()
         {
+            var tenantId = YkAbpConsts.MultiTenancyEnabled ? null : (int?)1;
             return new List<ApplicationLanguage>
             {
-                new ApplicationLanguage(null, "en", "English", "famfamfam-flags gb"),
-                new ApplicationLanguage(null, "zh-CN", "简体中文", "famfamfam-flags cn"),
+                new ApplicationLanguage(tenantId, "zh-CN", "简体中文", "famfamfam-flags cn"),
+                new ApplicationLanguage(tenantId, "en", "English", "famfamfam-flags gb"),
             };
         }
 

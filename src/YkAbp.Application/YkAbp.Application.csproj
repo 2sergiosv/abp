@@ -9,12 +9,18 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <RootNamespace>YkAbp.Application</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="EPPlus.Core" Version="1.5.2" />
+    <PackageReference Include="Abp.Web.Common" Version="3.2.4" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\YkAbp.Core\YkAbp.Core.csproj" />
+    <ProjectReference Include="..\YkAbp.EntityFrameworkCore\YkAbp.EntityFrameworkCore.csproj" />
   </ItemGroup>
 </Project>

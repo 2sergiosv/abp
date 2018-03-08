@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using Abp.MultiTenancy;
 using Microsoft.EntityFrameworkCore;
 using YkAbp.Core.Editions;
 using YkAbp.Core.MultiTenancy;
@@ -21,12 +22,12 @@ namespace YkAbp.EntityFrameworkCore.Seed.Tenants
 
         private void CreateDefaultTenant()
         {
-            // Default tenant
+            //Default tenant
 
             var defaultTenant = _context.Tenants.IgnoreQueryFilters().FirstOrDefault(t => t.TenancyName == Tenant.DefaultTenantName);
             if (defaultTenant == null)
             {
-                defaultTenant = new Tenant(Tenant.DefaultTenantName, Tenant.DefaultTenantName);
+                defaultTenant = new Tenant(AbpTenantBase.DefaultTenantName, AbpTenantBase.DefaultTenantName);
 
                 var defaultEdition = _context.Editions.IgnoreQueryFilters().FirstOrDefault(e => e.Name == EditionManager.DefaultEditionName);
                 if (defaultEdition != null)

@@ -1,12 +1,14 @@
 using System.Linq;
-using Abp.Application.Editions;
 using Abp.Application.Features;
 using Microsoft.EntityFrameworkCore;
 using YkAbp.Core.Editions;
+#if FEATURE_SIGNALR
+using YkAbp.Core.Features;
+#endif
 
 namespace YkAbp.EntityFrameworkCore.Seed.Host
 {
-    internal class DefaultEditionCreator
+    public class DefaultEditionCreator
     {
         private readonly YkAbpDbContext _context;
 
@@ -25,17 +27,27 @@ namespace YkAbp.EntityFrameworkCore.Seed.Host
             var defaultEdition = _context.Editions.IgnoreQueryFilters().FirstOrDefault(e => e.Name == EditionManager.DefaultEditionName);
             if (defaultEdition == null)
             {
-                defaultEdition = new Edition { Name = EditionManager.DefaultEditionName, DisplayName = EditionManager.DefaultEditionName };
+                defaultEdition = new SubscribableEdition { Name = EditionManager.DefaultEditionName, DisplayName = EditionManager.DefaultEditionName };
                 _context.Editions.Add(defaultEdition);
                 _context.SaveChanges();
 
-                /* Add desired features to the standard edition, if wanted... */
+                // TODO: Add desired features to the standard edition, if wanted... 
             }
+
+#if FEATURE_SIGNALR
+            if (defaultEdition.Id > 0)
+            {
+                CreateFeatureIfNotExists(defaultEdition.Id, AppFeatures.ChatFeature, true);
+                CreateFeatureIfNotExists(defaultEdition.Id, AppFeatures.TenantToTenantChatFeature, true);
+                CreateFeatureIfNotExists(defaultEdition.Id, AppFeatures.TenantToHostChatFeature, true);
+            }
+#endif
         }
 
         private void CreateFeatureIfNotExists(int editionId, string featureName, bool isEnabled)
         {
-            var defaultEditionChatFeature = _context.EditionFeatureSettings.IgnoreQueryFilters().FirstOrDefault(ef => ef.EditionId == editionId && ef.Name == featureName);
+            var defaultEditionChatFeature = _context.EditionFeatureSettings.IgnoreQueryFilters()
+                                                        .FirstOrDefault(ef => ef.EditionId == editionId && ef.Name == featureName);
 
             if (defaultEditionChatFeature == null)
             {

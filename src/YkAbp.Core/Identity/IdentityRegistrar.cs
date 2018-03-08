@@ -14,18 +14,20 @@ namespace YkAbp.Core.Identity
         {
             services.AddLogging();
 
-            return services.AddAbpIdentity<Tenant, User, Role>()
+            return services.AddAbpIdentity<Tenant, User, Role>(options =>
+                {
+                   // options.Tokens.ProviderMap[GoogleAuthenticatorProvider.Name] = new TokenProviderDescriptor(typeof(GoogleAuthenticatorProvider));
+                })
                 .AddAbpTenantManager<TenantManager>()
                 .AddAbpUserManager<UserManager>()
                 .AddAbpRoleManager<RoleManager>()
                 .AddAbpEditionManager<EditionManager>()
                 .AddAbpUserStore<UserStore>()
                 .AddAbpRoleStore<RoleStore>()
-                .AddAbpLogInManager<LogInManager>()
-                .AddAbpSignInManager<SignInManager>()
-                .AddAbpSecurityStampValidator<SecurityStampValidator>()
                 .AddAbpUserClaimsPrincipalFactory<UserClaimsPrincipalFactory>()
+                .AddAbpSecurityStampValidator<SecurityStampValidator>()
                 .AddPermissionChecker<PermissionChecker>()
+                .AddAbpSignInManager<SignInManager>()
                 .AddDefaultTokenProviders();
         }
     }

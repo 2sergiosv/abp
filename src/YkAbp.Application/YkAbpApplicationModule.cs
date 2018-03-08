@@ -8,8 +8,7 @@ using YkAbp.Core.Authorization;
 namespace YkAbp.Application
 {
     [DependsOn(
-        typeof(YkAbpCoreModule), 
-        typeof(AbpAutoMapperModule)
+        typeof(YkAbpCoreModule)
         )]
     public class YkAbpApplicationModule : AbpModule
     {
@@ -19,6 +18,8 @@ namespace YkAbp.Application
 
             Configuration.Navigation.Providers.Add<AppNavigationProvider>();
 
+            //Adding custom AutoMapper configuration
+            Configuration.Modules.AbpAutoMapper().Configurators.Add(CustomDtoMapper.CreateMappings);
         }
 
         public override void Initialize()
@@ -26,12 +27,6 @@ namespace YkAbp.Application
             var thisAssembly = typeof(YkAbpApplicationModule).GetAssembly();
 
             IocManager.RegisterAssemblyByConvention(thisAssembly);
-
-            Configuration.Modules.AbpAutoMapper().Configurators.Add(cfg =>
-            {
-                // Scan the assembly for classes which inherit from AutoMapper.Profile
-                cfg.AddProfiles(thisAssembly);
-            });
         }
     }
 }

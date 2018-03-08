@@ -16,11 +16,11 @@ namespace YkAbp.Core.Web
             var coreAssemblyDirectoryPath = Path.GetDirectoryName(typeof(YkAbpCoreModule).GetAssembly().Location);
             if (coreAssemblyDirectoryPath == null)
             {
-                throw new Exception("Could not find location of YkAbp.Core assembly!");
+                throw new Exception("Could not find location of YkAbp.Core.Core assembly!");
             }
 
             var directoryInfo = new DirectoryInfo(coreAssemblyDirectoryPath);
-            while (!DirectoryContains(directoryInfo.FullName, "YkAbp.sln"))
+            while (!DirectoryContains(directoryInfo.FullName, "YkAbp.Core.Web.sln"))
             {
                 if (directoryInfo.Parent == null)
                 {
@@ -30,13 +30,13 @@ namespace YkAbp.Core.Web
                 directoryInfo = directoryInfo.Parent;
             }
 
-            var webMvcFolder = Path.Combine(directoryInfo.FullName, "src", "YkAbp.Web.Mvc");
+            var webMvcFolder = Path.Combine(directoryInfo.FullName, $"src{Path.DirectorySeparatorChar}YkAbp.Core.Web.Mvc");
             if (Directory.Exists(webMvcFolder))
             {
                 return webMvcFolder;
             }
 
-            var webHostFolder = Path.Combine(directoryInfo.FullName, "src", "YkAbp.Web.Host");
+            var webHostFolder = Path.Combine(directoryInfo.FullName, $"src{Path.DirectorySeparatorChar}YkAbp.Core.Web.Host");
             if (Directory.Exists(webHostFolder))
             {
                 return webHostFolder;

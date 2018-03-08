@@ -1,4 +1,5 @@
 ﻿using Abp.Authorization;
+using Abp.Configuration.Startup;
 using Abp.Localization;
 using Abp.MultiTenancy;
 
@@ -6,6 +7,18 @@ namespace YkAbp.Core.Authorization
 {
     public class YkAbpAuthorizationProvider : AuthorizationProvider
     {
+        private readonly bool _isMultiTenancyEnabled;
+
+        public YkAbpAuthorizationProvider(bool isMultiTenancyEnabled)
+        {
+            _isMultiTenancyEnabled = isMultiTenancyEnabled;
+        }
+
+        public YkAbpAuthorizationProvider(IMultiTenancyConfig multiTenancyConfig)
+        {
+            _isMultiTenancyEnabled = multiTenancyConfig.IsEnabled;
+        }
+
         public override void SetPermissions(IPermissionDefinitionContext context)
         {
             var administration = context.CreatePermission(PermissionNames.Administration, L("Administration"));

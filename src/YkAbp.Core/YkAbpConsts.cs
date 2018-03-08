@@ -10,6 +10,13 @@
 
         public const string DefaultLanguae = "zh-CN";
 
+        public const int PaymentCacheDurationInMinutes = 30;
+
+        public const int MaxPhoneNumberLength = 11;
+
+        public const string TenancyNameRegex = "^[a-zA-Z][a-zA-Z0-9_-]{1,}$";
+
+        public const int MaxNameLength = 128;
 
         /// <summary>
         /// Default pass phrase for SimpleStringCipher decrypt/encrypt operations

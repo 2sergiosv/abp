@@ -3,11 +3,10 @@ using Abp.Configuration;
 using Abp.Localization;
 using Abp.Net.Mail;
 using Microsoft.EntityFrameworkCore;
-using YkAbp.Core;
 
 namespace YkAbp.EntityFrameworkCore.Seed.Host
 {
-    internal class DefaultSettingsCreator
+    public class DefaultSettingsCreator
     {
         private readonly YkAbpDbContext _context;
 
@@ -18,12 +17,12 @@ namespace YkAbp.EntityFrameworkCore.Seed.Host
 
         public void Create()
         {
-            // Emailing
+            //Emailing
             AddSettingIfNotExists(EmailSettingNames.DefaultFromAddress, "admin@mydomain.com");
             AddSettingIfNotExists(EmailSettingNames.DefaultFromDisplayName, "mydomain.com mailer");
 
-            // Languages
-            AddSettingIfNotExists(LocalizationSettingNames.DefaultLanguage, YkAbpConsts.DefaultLanguae);
+            //Languages
+            AddSettingIfNotExists(LocalizationSettingNames.DefaultLanguage, "en");
         }
 
         private void AddSettingIfNotExists(string name, string value, int? tenantId = null)

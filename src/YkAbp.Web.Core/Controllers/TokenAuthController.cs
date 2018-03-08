@@ -19,6 +19,7 @@ using YkAbp.Core.MultiTenancy;
 using YkAbp.Web.Core.Authentication.External;
 using YkAbp.Web.Core.Authentication.JwtBearer;
 using YkAbp.Web.Core.Models.TokenAuth;
+using LogInManager = YkAbp.Application.Authorization.LogInManager;
 
 namespace YkAbp.Web.Core.Controllers
 {

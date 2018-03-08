@@ -1,16 +1,19 @@
 using System.Linq;
+using Abp;
 using Abp.Authorization;
 using Abp.Authorization.Roles;
 using Abp.Authorization.Users;
 using Abp.MultiTenancy;
+using Abp.Notifications;
 using Microsoft.EntityFrameworkCore;
 using YkAbp.Core.Authorization;
 using YkAbp.Core.Authorization.Roles;
 using YkAbp.Core.Authorization.Users;
+using YkAbp.Core.Notifications;
 
 namespace YkAbp.EntityFrameworkCore.Seed.Host
 {
-    internal class HostRoleAndUserCreator
+    public class HostRoleAndUserCreator
     {
         private readonly YkAbpDbContext _context;
 
@@ -26,7 +29,7 @@ namespace YkAbp.EntityFrameworkCore.Seed.Host
 
         private void CreateHostRoleAndUsers()
         {
-            // Admin role for host
+            //Admin role for host
 
             var adminRoleForHost = _context.Roles.IgnoreQueryFilters().FirstOrDefault(r => r.TenantId == null && r.Name == StaticRoleNames.Host.Admin);
             if (adminRoleForHost == null)
@@ -35,35 +38,7 @@ namespace YkAbp.EntityFrameworkCore.Seed.Host
                 _context.SaveChanges();
             }
 
-            // Grant all permissions to admin role for host
-
-            var grantedPermissions = _context.Permissions.IgnoreQueryFilters()
-                .OfType<RolePermissionSetting>()
-                .Where(p => p.TenantId == null && p.RoleId == adminRoleForHost.Id)
-                .Select(p => p.Name)
-                .ToList();
-
-            var permissions = PermissionFinder
-                .GetAllPermissions(new YkAbpAuthorizationProvider())
-                .Where(p => p.MultiTenancySides.HasFlag(MultiTenancySides.Host) &&
-                            !grantedPermissions.Contains(p.Name))
-                .ToList();
-
-            if (permissions.Any())
-            {
-                _context.Permissions.AddRange(
-                    permissions.Select(permission => new RolePermissionSetting
-                    {
-                        TenantId = null,
-                        Name = permission.Name,
-                        IsGranted = true,
-                        RoleId = adminRoleForHost.Id
-                    })
-                );
-                _context.SaveChanges();
-            }
-
-            // Admin user for host
+            //admin user for host
 
             var adminUserForHost = _context.Users.IgnoreQueryFilters().FirstOrDefault(u => u.TenantId == null && u.UserName == AbpUserBase.AdminUserName);
             if (adminUserForHost == null)
@@ -74,10 +49,11 @@ namespace YkAbp.EntityFrameworkCore.Seed.Host
                     UserName = AbpUserBase.AdminUserName,
                     Name = "admin",
                     Surname = "admin",
-                    EmailAddress = "admin@aspnetboilerplate.com",
+                    EmailAddress = "admin@aspnetzero.com",
                     IsEmailConfirmed = true,
+                    ShouldChangePasswordOnNextLogin = true,
                     IsActive = true,
-                    Password = "AM4OLBpptxBYmM79lGOX9egzZk3vIQU3d/gFCJzaBjAPXzYIK3tQ2N7X4fcrHtElTw==" // 123qwe
+                    Password = "AM4OLBpptxBYmM79lGOX9egzZk3vIQU3d/gFCJzaBjAPXzYIK3tQ2N7X4fcrHtElTw==" //123qwe
                 };
 
                 user.SetNormalizedNames();
@@ -85,11 +61,31 @@ namespace YkAbp.EntityFrameworkCore.Seed.Host
                 adminUserForHost = _context.Users.Add(user).Entity;
                 _context.SaveChanges();
 
-                // Assign Admin role to admin user
+                //Assign Admin role to admin user
                 _context.UserRoles.Add(new UserRole(null, adminUserForHost.Id, adminRoleForHost.Id));
                 _context.SaveChanges();
 
-                // User account of admin user
+                //Grant all permissions
+                var permissions = PermissionFinder
+                    .GetAllPermissions(new YkAbpAuthorizationProvider(true))
+                    .Where(p => p.MultiTenancySides.HasFlag(MultiTenancySides.Host))
+                    .ToList();
+
+                foreach (var permission in permissions)
+                {
+                    _context.Permissions.Add(
+                        new RolePermissionSetting
+                        {
+                            TenantId = null,
+                            Name = permission.Name,
+                            IsGranted = true,
+                            RoleId = adminRoleForHost.Id
+                        });
+                }
+
+                _context.SaveChanges();
+
+                //User account of admin user
                 _context.UserAccounts.Add(new UserAccount
                 {
                     TenantId = null,
@@ -97,6 +93,13 @@ namespace YkAbp.EntityFrameworkCore.Seed.Host
                     UserName = AbpUserBase.AdminUserName,
                     EmailAddress = adminUserForHost.EmailAddress
                 });
+
+                _context.SaveChanges();
+
+                //Notification subscriptions
+                _context.NotificationSubscriptions.Add(new NotificationSubscriptionInfo(SequentialGuidGenerator.Instance.Create(), null, adminUserForHost.Id, AppNotificationNames.NewTenantRegistered));
+                _context.NotificationSubscriptions.Add(new NotificationSubscriptionInfo(SequentialGuidGenerator.Instance.Create(), null, adminUserForHost.Id, AppNotificationNames.NewUserRegistered));
+
                 _context.SaveChanges();
             }
         }
