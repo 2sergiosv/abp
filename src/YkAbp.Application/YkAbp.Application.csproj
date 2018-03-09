@@ -16,8 +16,8 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="EPPlus.Core" Version="1.5.2" />
-    <PackageReference Include="Abp.Web.Common" Version="3.2.4" />
+    <PackageReference Include="EPPlus.Core" Version="1.5.4" />
+    <PackageReference Include="Abp.Web.Common" Version="3.4.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\YkAbp.Core\YkAbp.Core.csproj" />

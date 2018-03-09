@@ -13,7 +13,7 @@ namespace YkAbp.EntityFrameworkCore
         public YkAbpDbContext CreateDbContext(string[] args)
         {
             var builder = new DbContextOptionsBuilder<YkAbpDbContext>();
-            var configuration = AppConfigurations.Get(WebContentDirectoryFinder.CalculateContentRootFolder());
+            var configuration = AppConfigurations.Get(WebContentDirectoryFinder.FindConfigurationFolder());
 
             YkAbpDbContextConfigurer.Configure(builder, configuration.GetConnectionString(YkAbpConsts.ConnectionStringName));
 

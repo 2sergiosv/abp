@@ -1,4 +1,5 @@
 ﻿using System;
+using Abp.AutoMapper;
 using Abp.Dependency;
 using Abp.Modules;
 using Abp.Net.Mail;
@@ -8,6 +9,7 @@ using Abp.Timing;
 using Abp.Zero;
 using Abp.Zero.Configuration;
 using Abp.Configuration.Startup;
+using Abp.MailKit;
 using Castle.MicroKernel.Registration;
 using Microsoft.AspNetCore.Hosting;
 using YkAbp.Core.Authorization.Roles;
@@ -28,7 +30,11 @@ using YkAbp.Core.Timing;
 
 namespace YkAbp.Core
 {
-    [DependsOn(typeof(AbpZeroCoreModule))]
+    [DependsOn(typeof(AbpZeroCoreModule),
+            typeof(AbpAutoMapperModule),
+            typeof(ORS.AspNetZeroCore.Web.AspNetZeroCoreWebModule),
+            typeof(AbpMailKitModule)
+        )]
     public class YkAbpCoreModule : AbpModule
     {
         private readonly IHostingEnvironment _env;

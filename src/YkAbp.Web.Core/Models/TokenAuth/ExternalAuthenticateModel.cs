@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using Abp.Authorization.Users;
 
 namespace YkAbp.Web.Core.Models.TokenAuth
@@ -6,14 +6,18 @@ namespace YkAbp.Web.Core.Models.TokenAuth
     public class ExternalAuthenticateModel
     {
         [Required]
-        [StringLength(UserLogin.MaxLoginProviderLength)]
+        [MaxLength(UserLogin.MaxLoginProviderLength)]
         public string AuthProvider { get; set; }
 
         [Required]
-        [StringLength(UserLogin.MaxProviderKeyLength)]
+        [MaxLength(UserLogin.MaxProviderKeyLength)]
         public string ProviderKey { get; set; }
 
         [Required]
         public string ProviderAccessCode { get; set; }
+
+        public string ReturnUrl { get; set; }
+
+        public bool? SingleSignIn { get; set; }
     }
 }

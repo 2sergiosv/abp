@@ -1,4 +1,4 @@
-﻿namespace YkAbp.Web.Core.Models.TokenAuth
+namespace YkAbp.Web.Core.Models.TokenAuth
 {
     public class ExternalAuthenticateResultModel
     {
@@ -9,5 +9,7 @@
         public int ExpireInSeconds { get; set; }
 
         public bool WaitingForActivation { get; set; }
+
+        public string ReturnUrl { get; set; }
     }
 }

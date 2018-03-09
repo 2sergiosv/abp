@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Owin.Builder;
 using Owin;
 
-namespace YkAbp.Owin
+namespace YkAbp.Web.Core.Owin
 {
     /// <summary>
     /// This class (UseAppBuilder method) integrates OWIN pipeline to ASP.NET Core pipeline and

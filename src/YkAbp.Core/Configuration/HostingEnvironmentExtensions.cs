@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using System.IO;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 
 namespace YkAbp.Core.Configuration
@@ -7,7 +8,7 @@ namespace YkAbp.Core.Configuration
     {
         public static IConfigurationRoot GetAppConfiguration(this IHostingEnvironment env)
         {
-            return AppConfigurations.Get(env.ContentRootPath, env.EnvironmentName, env.IsDevelopment());
+            return AppConfigurations.Get(Path.Combine(env.ContentRootPath, "config"), env.EnvironmentName, env.IsDevelopment());
         }
     }
 }

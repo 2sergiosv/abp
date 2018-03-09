@@ -17,12 +17,12 @@ namespace YkAbp.Migrator
     {
         public Log Log { get; private set; }
 
-        private readonly AbpZeroDbMigrator _migrator;
+        private readonly YkAbpDbMigrator _migrator;
         private readonly IRepository<Tenant> _tenantRepository;
         private readonly IDbPerTenantConnectionStringResolver _connectionStringResolver;
 
         public MultiTenantMigrateExecuter(
-            AbpZeroDbMigrator migrator,
+            YkAbpDbMigrator migrator,
             IRepository<Tenant> tenantRepository,
             Log log,
             IDbPerTenantConnectionStringResolver connectionStringResolver)

@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Abp.Application.Services;
 using YkAbp.Application.Authorization.Users.Dto;
 using YkAbp.Application.Authorization.Users.Profile.Dto;
+using YkAbp.Application.Users.Dto;
 
 namespace YkAbp.Application.Authorization.Users.Profile
 {

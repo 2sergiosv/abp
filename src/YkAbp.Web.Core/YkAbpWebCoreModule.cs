@@ -1,9 +1,11 @@
 ﻿using System;
+using System.IO;
 using System.Text;
 using Abp.AspNetCore;
 using Abp.AspNetCore.Configuration;
 using Abp.Configuration.Startup;
 using Abp.Hangfire;
+using Abp.IO;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
 using Abp.Runtime.Caching.Redis;
@@ -16,6 +18,7 @@ using YkAbp.Core;
 using YkAbp.Core.Configuration;
 using YkAbp.EntityFrameworkCore;
 using YkAbp.Web.Core.Authentication.JwtBearer;
+using YkAbp.Web.Core.Authentication.TwoFactor;
 using YkAbp.Web.Core.Configuration;
 
 #if FEATURE_SIGNALR
@@ -59,6 +62,11 @@ namespace YkAbp.Web.Core
                     typeof(YkAbpApplicationModule).GetAssembly()
                 );
 
+            Configuration.Caching.Configure(TwoFactorCodeCacheItem.CacheName, cache =>
+            {
+                cache.DefaultAbsoluteExpireTime = TimeSpan.FromMinutes(2);
+            });
+
             Configuration.ReplaceService<IAppConfigurationAccessor, AppConfigurationAccessor>();
 
             ConfigureTokenAuthIfEnabled();
@@ -98,6 +106,40 @@ namespace YkAbp.Web.Core
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(typeof(YkAbpWebCoreModule).GetAssembly());
+        }
+
+        public override void PostInitialize()
+        {
+            SetAppFolders();
+        }
+
+        private void SetAppFolders()
+        {
+            var appFolders = IocManager.Resolve<AppFolders>();
+
+            appFolders.SampleProfileImagesFolder = Path.Combine(_env.WebRootPath, $"Common{Path.DirectorySeparatorChar}Images{Path.DirectorySeparatorChar}Profiles");
+            appFolders.TempFileDownloadFolder = Path.Combine(_env.WebRootPath, $"Temp{Path.DirectorySeparatorChar}Downloads");
+            appFolders.WebLogsFolder = Path.Combine(_env.ContentRootPath, $"App_Data{Path.DirectorySeparatorChar}Logs");
+
+#if NET461
+            if (_env.IsDevelopment())
+            {
+                var currentAssemblyDirectoryPath = typeof(YkAbpWebCoreModule).GetAssembly().GetDirectoryPathOrNull();
+                if (currentAssemblyDirectoryPath != null)
+                {
+                    appFolders.WebLogsFolder = Path.Combine(currentAssemblyDirectoryPath, $"App_Data{Path.DirectorySeparatorChar}Logs");
+                }
+            }
+#endif
+
+            try
+            {
+                DirectoryHelper.CreateIfNotExists(appFolders.TempFileDownloadFolder);
+            }
+            catch
+            {
+                // ignored
+            }
         }
     }
 }

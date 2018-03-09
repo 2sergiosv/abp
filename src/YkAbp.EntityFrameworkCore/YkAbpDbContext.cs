@@ -26,7 +26,7 @@ namespace YkAbp.EntityFrameworkCore
         typeof(YkAbpRepositoryBase<>),
         typeof(YkAbpRepositoryBase<,>)
     )]
-    public class YkAbpDbContext : AbpZeroDbContext<Tenant, Role, User, YkAbpDbContext>
+    public class YkAbpDbContext : AbpZeroDbContext<Tenant, Role, User, YkAbpDbContext>, IAbpPersistedGrantDbContext
     {
         public virtual DbSet<BinaryObject> BinaryObjects { get; set; }
 

@@ -1,27 +1,28 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Abp.Auditing;
 using Abp.Authorization.Users;
 
 namespace YkAbp.Web.Core.Models.TokenAuth
 {
     public class AuthenticateModel
     {
-        /// <summary>
-        /// 用户名或者绑定的Email
-        /// </summary>
         [Required]
-        [StringLength(AbpUserBase.MaxEmailAddressLength)]
+        [MaxLength(AbpUserBase.MaxEmailAddressLength)]
         public string UserNameOrEmailAddress { get; set; }
 
-        /// <summary>
-        /// 登录密码
-        /// </summary>
         [Required]
-        [StringLength(AbpUserBase.MaxPlainPasswordLength)]
+        [MaxLength(AbpUserBase.MaxPlainPasswordLength)]
+        [DisableAuditing]
         public string Password { get; set; }
-        
-        /// <summary>
-        /// 是否保持登录
-        /// </summary>
+
+        public string TwoFactorVerificationCode { get; set; }
+
         public bool RememberClient { get; set; }
+
+        public string TwoFactorRememberClientToken { get; set; }
+
+        public bool? SingleSignIn { get; set; }
+
+        public string ReturnUrl { get; set; }
     }
 }
