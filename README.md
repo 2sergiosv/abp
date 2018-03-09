@@ -21,7 +21,7 @@
 * 支持i18n，统一配置到 ** src/YkAbp.Web.Host/lang** 。i18n不支持在自定义模块中新增的语言资源。
 * 使用YkAbpUserConfiguration/GetAll替代原AbpUserConfiguration/GetAll接口（获取用户相关的系统配置数据）。
 
->  **待优化**：由于[AbpUserConfigurationBuilder](https://github.com/aspnetboilerplate/aspnetboilerplate/blob/3337d1e2d8e8e6225ed5c28020e16cdc5562cd99/src/Abp.Web.Common/Web/Configuration/AbpUserConfigurationBuilder.cs)不易扩展（没有接口不能重新实现、属性全是私有的不能继承、GetAll不是virtual)，所以重新写了YkAbpUserConfigurationBuilder和YkAbpUserConfigurationController，不够灵活。
+>  **待优化**：由于[AbpUserConfigurationBuilder](https://github.com/aspnetboilerplate/aspnetboilerplate/blob/3337d1e2d8e8e6225ed5c28020e16cdc5562cd99/src/Abp.Web.Common/Web/Configuration/AbpUserConfigurationBuilder.cs)不易扩展（没有接口不能重新实现、属性全是私有的不能继承、GetAll不是virtual)，所以重新写了YkAbpUserConfigurationBuilder和YkAbpUserConfigurationController，不够灵活。已经向ABP提了PR，将合并到3.5.0版本。
 
 ## 插件模块
 ABP的模块可以是在startup module中进行显示依赖指定了，也可以按程序集的方式进行动态加载，详见[PlugIn Module](https://aspnetboilerplate.com/Pages/Documents/Module-System#plugin-modules)。
@@ -45,4 +45,11 @@ ABP的模块可以是在startup module中进行显示依赖指定了，也可以
 
 ### 编译事件脚本
 在编译完成后，将dll复制到Plugins目录。
+* 在项目属性 -> 生成事件 -> 后期生成事件命令行：
 
+```bash
+xcopy /E /Y /Q "$(TargetDir)$(TargetFileName)" ..\YkAbp.Web.Host\Plugins\
+xcopy /E /Y /Q "$(TargetDir)$(TargetName).pdb" ..\YkAbp.Web.Host\Plugins\
+```
+
+## TODOs

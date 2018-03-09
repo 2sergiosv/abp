@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Plugins\" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="lang\AbpWeb\AbpWeb-en.json">
